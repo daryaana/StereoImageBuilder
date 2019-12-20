@@ -179,6 +179,28 @@ return thirdImage;
 
         return result;
     }
+
+    private int[] newColor(BufferedImage image, int i, int j, int[][] matrix) {
+        int[] newPixel = new int[3];
+        int newRed = 0;
+        int newGreen = 0;
+        int newBlue = 0;
+        for (int n = 0; n < matrix.length; n++) {
+            for (int m = 0; m < matrix.length; m++) {
+                int x = countIndex(image.getWidth(), i, n, matrix.length);
+                int y = countIndex(image.getHeight(), j, m, matrix.length);
+
+                newRed += matrix[n % matrix.length][m % matrix.length] * (new Color(image.getRGB(x, y))).getRed();
+                newGreen += matrix[n % matrix.length][m % matrix.length] * (new Color(image.getRGB(x, y))).getGreen();
+                newBlue += matrix[n % matrix.length][m % matrix.length] * (new Color(image.getRGB(x, y))).getBlue();
+            }
+        }
+        newPixel[0] = newRed;
+        newPixel[1] = newGreen;
+        newPixel[2] = newBlue;
+
+        return newPixel;
+    }
     @Override
     public void paint(Graphics g) {
         super.paint(g);
