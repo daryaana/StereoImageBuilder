@@ -175,6 +175,60 @@ public class MenuWindow extends JFrame {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }
+    private void robertSettings() {
+        JDialog dialog = new JDialog(this, "Set contour", true);
+        JPanel contourPanel = new JPanel();
+        JSlider contourSlider = new JSlider(JSlider.HORIZONTAL);
+        TextField contourField = new TextField("", 10);
+        JButton save = new JButton("Save");
+        int threshold = 10;
+
+        contourPanel.setLayout(new GridLayout(3, 2));
+
+        save.addActionListener(d -> dialog.dispose());
+
+
+        contourSlider.setMinimum(0);
+        contourSlider.setMaximum(100);
+
+        contourField.setText(String.valueOf(threshold));
+        contourSlider.setValue(threshold);
+
+        contourField.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                contourSlider.setValue(Integer.valueOf(contourField.getText()));
+            }
+        });
+
+
+        contourSlider.addChangeListener(s -> {
+            int c = contourSlider.getValue();
+            contourField.setText(String.valueOf(c));
+            mainPanel.setThreshold(c);
+      //      mainPanel.robertFilter();
+
+        });
+
+        contourPanel.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createTitledBorder("Threshold"), BorderFactory.createEmptyBorder(5, 5, 5, 5)));
+
+        contourPanel.add(contourField);
+        contourPanel.add(contourSlider);
+        contourPanel.add(save);
+
+        dialog.add(contourPanel);
+
+        dialog.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        dialog.setPreferredSize(new Dimension(300, 130));
+        dialog.pack();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }
+
 
 
 
