@@ -277,6 +277,11 @@ return thirdImage;
         thirdImage = negative(secondImage);
         repaint();
     }
+    public void embossing() {
+        thirdImage = embossingFilter(secondImage);
+        repaint();
+    }
+
 
     BufferedImage embossingFilter(BufferedImage secondImage) {
         if (secondImage == null) {
