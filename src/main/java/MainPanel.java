@@ -17,6 +17,7 @@ public class MainPanel extends JPanel {
     Rectangle bounds;
     boolean visible;
     private int angle;//=0;
+    int red, green, blue;
     MainPanel() {
 
 
@@ -152,6 +153,14 @@ public class MainPanel extends JPanel {
 
 return thirdImage;
     }
+
+    public void setRGB(int redInit, int greenInit, int blueInit) {
+        red = redInit;
+        green = greenInit;
+        blue = blueInit;
+    }
+
+
     @Override
     public void paint(Graphics g) {
         super.paint(g);
