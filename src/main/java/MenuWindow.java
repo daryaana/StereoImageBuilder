@@ -33,6 +33,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(blackWhiteButton);
         blackWhiteButton.addActionListener(blackWhiteAction);
     }
+    public void createToolbarWaterColor(JToolBar toolBar) {
+        JButton waterButton = new JButton();
+        waterButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/water.png")));
+        waterButton.setToolTipText("Watercolor");
+        toolBar.add(waterButton);
+        waterButton.addActionListener(waterAction);
+    }
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);
