@@ -22,6 +22,9 @@ public class MenuWindow extends JFrame {
     }
 
     ActionListener blackWhiteAction = e -> mainPanel.blackWhiteFilter();
+    ActionListener rotateAction = e -> {
+        mainPanel.rotateFilter();
+    };
 
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();
