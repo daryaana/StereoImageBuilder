@@ -241,6 +241,10 @@ return thirdImage;
         return multiplyMatrix(secondImage, matrixBlur, 6, 0);
     }
 
+    public void watercolorFilter() {
+        thirdImage = watercolor(secondImage);
+        repaint();
+    }
     public BufferedImage watercolor(BufferedImage image) {
         if (secondImage == null) {
             image = firstImage;
