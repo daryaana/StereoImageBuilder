@@ -1,36 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="create generator StereoPic">
+    <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Lena.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/Lena.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/about.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/blackwhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/blackwhite.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/blur.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/blur.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/circle_300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/circle_300x300.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/circle_and_rect__399x399.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/circle_and_rect__399x399.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/circle_and_rect__496x498.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/circle_and_rect__496x498.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/copy.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/double.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/double.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/embossing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/embossing.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/negative.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/negative.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ordered.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/ordered.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern (1).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern (2).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern (2).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern (3).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern (3).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/photo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/photo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/robert.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/robert.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rotate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rotate.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rsz_1pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rsz_1pattern.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rsz_pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rsz_pattern.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rsz_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rsz_pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/select.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/select.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sharpness.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sharpness.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sobel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sobel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/water.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/water.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,13 +37,15 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="318" />
-          <entry key="txt" value="1718" />
+          <entry key="txt" value="1723" />
+          <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="318" />
-          <entry key="PLAIN_TEXT" value="1718" />
+          <entry key="PLAIN_TEXT" value="1723" />
+          <entry key="XML" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -79,7 +54,11 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -106,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="199" column="14" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="14" />
+            <state relative-caret-position="211">
+              <caret line="301" lean-forward="true" selection-start-line="301" selection-end-line="301" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1451#1452#0" expanded="true" />
@@ -140,16 +119,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/StereoImageCreator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="30">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="61">
@@ -215,8 +194,8 @@
       <find>sob</find>
       <find>multiplyMatrix</find>
       <find>black</find>
-      <find>setAn</find>
       <find>createToolbarRobert</find>
+      <find>setAn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,14 +221,15 @@
         <option value="$PROJECT_DIR$/src/main/java/StereoImageCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/MenuWindow.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="140" />
-    <option name="y" value="27" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="683" />
+    <option name="y" value="25" />
     <option name="width" value="683" />
-    <option name="height" value="555" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -289,6 +269,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="StereoImageBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StereoImageBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,9 +284,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576861981459" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576865168020" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -336,13 +325,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576406408989</updated>
-    </task>
-    <task id="LOCAL-00051" summary="shell matrix Sharpness">
-      <created>1576857842082</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857842082</updated>
     </task>
     <task id="LOCAL-00052" summary="create Sharpness on Toolbar">
       <created>1576857904460</created>
@@ -680,7 +662,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576861412940</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="fix">
+      <created>1576862017442</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1576862017442</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TodoView">
@@ -693,10 +682,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="683" y="25" width="683" height="743" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3901515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14756672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -705,15 +694,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41435564" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41435564" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27243066" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23327896" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32952693" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32952693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -758,7 +747,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="setter Red Color" />
     <MESSAGE value="setter Green color" />
     <MESSAGE value="setter Blue color" />
     <MESSAGE value="fix ordered filter" />
@@ -783,12 +771,10 @@
     <MESSAGE value="update B&amp;W filter" />
     <MESSAGE value="new class for stereo" />
     <MESSAGE value="create generator StereoPic" />
-    <option name="LAST_COMMIT_MESSAGE" value="create generator StereoPic" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -800,48 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StereoImageCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="199" column="14" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-            <element signature="e#1632#1633#0" expanded="true" />
-            <element signature="e#1639#1745#0" />
-            <element signature="e#1640#2782#0" />
-            <element signature="e#1639#1736#0" />
-            <element signature="e#1638#3079#0" />
-            <element signature="e#4492#4586#0" />
-            <element signature="e#4492#5116#0" />
-            <element signature="e#2680#2681#0" expanded="true" />
-            <element signature="e#2714#2715#0" expanded="true" />
-            <element signature="method#blackWhiteFilter#0;class#MainPanel#0" />
-            <element signature="method#setRGB#0;class#MainPanel#0" />
-            <element signature="method#checkColor#0;class#MainPanel#0" />
-            <element signature="method#countIndex#0;class#MainPanel#0" />
-            <element signature="method#newColor#0;class#MainPanel#0" />
-            <element signature="method#blurFilter#0;class#MainPanel#0" />
-            <element signature="method#blur#0;class#MainPanel#0" />
-            <element signature="method#watercolorFilter#0;class#MainPanel#0" />
-            <element signature="method#watercolor#0;class#MainPanel#0" />
-            <element signature="method#c2b#0;class#MainPanel#0" />
-            <element signature="method#negative#0;class#MainPanel#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,6 +837,55 @@
             <element signature="e#15086#15087#0" expanded="true" />
             <element signature="e#15177#15178#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="301" lean-forward="true" selection-start-line="301" selection-end-line="301" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1632#1633#0" expanded="true" />
+            <element signature="e#1639#1745#0" />
+            <element signature="e#1640#2782#0" />
+            <element signature="e#1639#1736#0" />
+            <element signature="e#1638#3079#0" />
+            <element signature="e#4492#4586#0" />
+            <element signature="e#4492#5116#0" />
+            <element signature="e#2680#2681#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
+            <element signature="method#blackWhiteFilter#0;class#MainPanel#0" />
+            <element signature="method#setRGB#0;class#MainPanel#0" />
+            <element signature="method#checkColor#0;class#MainPanel#0" />
+            <element signature="method#countIndex#0;class#MainPanel#0" />
+            <element signature="method#newColor#0;class#MainPanel#0" />
+            <element signature="method#blurFilter#0;class#MainPanel#0" />
+            <element signature="method#blur#0;class#MainPanel#0" />
+            <element signature="method#watercolorFilter#0;class#MainPanel#0" />
+            <element signature="method#watercolor#0;class#MainPanel#0" />
+            <element signature="method#c2b#0;class#MainPanel#0" />
+            <element signature="method#negative#0;class#MainPanel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StereoImageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>

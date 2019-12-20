@@ -1,9 +1,14 @@
 import java.awt.image.BufferedImage;
 
 public class StereoImageCreator {
+    public int getRed(int x,int y, BufferedImage image) {
+        int rgb = image.getRGB(x,y);
+        int red = (rgb >> 16) & 0xFF;
+        return red;
+    }
     public BufferedImage generateStereoPicture(BufferedImage bitmapMask, BufferedImage stereoImg)
     {
-        // Переводим маску в массив сдвигов
+// Переводим маску в массив сдвигов
         int w = bitmapMask.getWidth();
         int h = bitmapMask.getHeight();
         int[][] mask = new int[w][];
@@ -11,16 +16,14 @@ public class StereoImageCreator {
         {
             mask[x] = new int[h];
             for (int y = 0; y < h; y++) {
-                int rgb = bitmapMask.getRGB(x,y);
-                int red = (rgb >> 16) & 0xFF;
-                mask[x][y] = red / 32;
+                mask[x][y] = getRed(x,y,bitmapMask);
             }
         }
 
-        // Cоздаем фон
+// Cоздаем фон
         int s = 100;
 
-        // Сдвигаем каждый пиксел
+// Сдвигаем каждый пиксел
         for (int y = 0; y < h; y++)
             for (int x = 0; x < w; x++)
                 if (mask[x][y] > 0)
