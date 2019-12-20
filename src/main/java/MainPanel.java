@@ -18,6 +18,8 @@ public class MainPanel extends JPanel {
     Rectangle selector;
     Rectangle bounds;
     boolean visible;
+    private int X = 0;
+    private int Y = 0;
     private int angle;//=0;
     int red, green, blue;
     private final int[][] matrixBlur = {

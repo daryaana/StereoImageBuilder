@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
@@ -422,11 +423,11 @@ public class MenuWindow extends JFrame {
             createToolbarNegative(toolBar);
             createToolbarSharpness(toolBar);
             createToolbarEmbossing(toolBar);
-            createToolbarAbout(toolBar);
             createToolbarDouble(toolBar);
             createToolbarOrdered(toolBar);
             createToolbarSobel(toolBar);
             createToolbarRobert(toolBar);
+            createToolbarAbout(toolBar);
             toolBar.setFloatable(false);
 
             menuBar.add(fileMenu);
@@ -452,6 +453,14 @@ public class MenuWindow extends JFrame {
 
             openMenuItem.addActionListener(openAction);
 
+/**обработаем клик на кнопку exit*/
+            exitMenuItem.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent event) {
+                    System.exit(1);
+
+                }
+            });
 
             setLocationRelativeTo(null);
             setVisible(true);
