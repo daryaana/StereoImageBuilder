@@ -262,6 +262,10 @@ return thirdImage;
         }
         return thirdImage;
     }
+    public void c2b() {
+        secondImage = thirdImage;
+        repaint();
+    }
 
     @Override
     public void paint(Graphics g) {
