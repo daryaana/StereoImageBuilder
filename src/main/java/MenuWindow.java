@@ -53,6 +53,14 @@ public class MenuWindow extends JFrame {
         toolBar.add(negativeFButton);
         negativeFButton.addActionListener(negativeAction);
     }
+
+    public void createToolbarEmbossing(JToolBar toolBar) {
+        JButton embossingButton = new JButton();
+        embossingButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/embossing.png")));
+        embossingButton.setToolTipText("Embossing");
+        toolBar.add(embossingButton);
+        embossingButton.addActionListener(embossingAction);
+    }
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);
