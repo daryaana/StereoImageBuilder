@@ -45,6 +45,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(waterButton);
         waterButton.addActionListener(waterAction);
     }
+    public void createToolbarNegative(JToolBar toolBar) {
+        JButton negativeFButton = new JButton();
+        negativeFButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/negative.png")));
+        negativeFButton.setToolTipText("Negative");
+        toolBar.add(negativeFButton);
+        negativeFButton.addActionListener(negativeAction);
+    }
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);
