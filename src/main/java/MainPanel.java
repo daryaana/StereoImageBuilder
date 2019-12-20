@@ -75,6 +75,22 @@ return thirdImage;
     public void paint(Graphics g) {
         super.paint(g);
         g.setColor(Color.BLACK);
+        drawDashedLine(g, 10, 10, 360, 10);//-
+        drawDashedLine(g, 360, 10, 360, 360);//|
+        drawDashedLine(g, 360, 360, 10, 360);
+        drawDashedLine(g, 10, 360, 10, 10);
+
+
+        drawDashedLine(g, 370, 10, 720, 10);
+        drawDashedLine(g, 720, 10, 720, 360);
+        drawDashedLine(g, 720, 360, 370, 360);
+        drawDashedLine(g, 370, 360, 370, 10);
+
+        drawDashedLine(g, 730, 10, 1080, 10);
+        drawDashedLine(g, 1080, 10, 1080, 360);
+        drawDashedLine(g, 1080, 360, 730, 360);
+        drawDashedLine(g, 730, 360, 730, 10);
+
 
         if (firstImage != null) {
             if (firstImage.getWidth() > 350 || firstImage.getHeight() > 350) {
