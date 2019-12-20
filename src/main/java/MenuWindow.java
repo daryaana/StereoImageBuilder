@@ -66,7 +66,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(sharpnessButton);
         sharpnessButton.addActionListener(sharpnessAction);
     }
-
+    public void createToolbarSobel(JToolBar toolBar) {
+        JButton sobelButton = new JButton();
+        sobelButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/sobel.png")));
+        sobelButton.setToolTipText("Sobel");
+        toolBar.add(sobelButton);
+        sobelButton.addActionListener(sobelAction);
+    }
     public void createToolbarEmbossing(JToolBar toolBar) {
         JButton embossingButton = new JButton();
         embossingButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/embossing.png")));
