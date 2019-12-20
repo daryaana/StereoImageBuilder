@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="matrix Sharpness">
+    <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="create generator StereoPic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MenuWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MenuWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Lena.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/Lena.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/about.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blackwhite.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/blackwhite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/blur.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/blur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/circle_300x300.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/circle_300x300.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/circle_and_rect__399x399.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/circle_and_rect__399x399.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/circle_and_rect__496x498.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/circle_and_rect__496x498.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/copy.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/copy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/double.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/double.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/embossing.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/embossing.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/negative.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/negative.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ordered.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/ordered.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern (1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern (1).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern (2).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern (2).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern (3).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern (3).jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pattern.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/photo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/photo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/robert.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/robert.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rotate.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rotate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rsz_1pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rsz_1pattern.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rsz_pattern.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rsz_pattern.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/rsz_pic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/rsz_pic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/select.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/select.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sharpness.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sharpness.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sobel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/sobel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/water.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/water.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,24 +53,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="4" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="4" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="277" />
-          <entry key="txt" value="1335" />
+          <entry key="java" value="318" />
+          <entry key="txt" value="1718" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="277" />
-          <entry key="PLAIN_TEXT" value="1335" />
+          <entry key="JAVA" value="318" />
+          <entry key="PLAIN_TEXT" value="1718" />
         </counts>
       </usages-collector>
     </session>
@@ -60,18 +86,44 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/ImageIcon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="216" selection-start-line="216" selection-end-line="216" />
+              <folding>
+                <element signature="e#6758#6759#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+            <state relative-caret-position="121">
+              <caret line="199" column="14" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1524#1525#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1599#1600#0" expanded="true" />
+                <element signature="e#1632#1633#0" expanded="true" />
+                <element signature="e#1639#1745#0" />
+                <element signature="e#1640#2782#0" />
+                <element signature="e#1639#1736#0" />
+                <element signature="e#1638#3079#0" />
+                <element signature="e#4492#4586#0" />
+                <element signature="e#4492#5116#0" />
+                <element signature="e#2680#2681#0" expanded="true" />
+                <element signature="e#2714#2715#0" expanded="true" />
                 <element signature="method#blackWhiteFilter#0;class#MainPanel#0" />
                 <element signature="method#setRGB#0;class#MainPanel#0" />
                 <element signature="method#checkColor#0;class#MainPanel#0" />
@@ -89,28 +141,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/StereoImageCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
+            <state relative-caret-position="61">
+              <caret line="424" column="12" selection-start-line="424" selection-start-column="12" selection-end-line="424" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#818#890#0" />
                 <element signature="e#893#939#0" />
+                <element signature="e#1107#1179#0" />
                 <element signature="e#974#1024#0" />
                 <element signature="method#sobelSettings#0;class#MenuWindow#0" />
                 <element signature="e#2336#2337#0" expanded="true" />
                 <element signature="e#2431#2432#0" expanded="true" />
-                <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
+                <element signature="method#orderedSettings#0;class#MenuWindow#0" />
+                <element signature="method#robertSettings#0;class#MenuWindow#0" />
+                <element signature="e#7210#7211#0" expanded="true" />
+                <element signature="e#7305#7306#0" expanded="true" />
+                <element signature="method#createToolbarMirrorF#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarSharpness#0;class#MenuWindow#0" />
+                <element signature="method#createToolbarOrdered#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarEmbossing#0;class#MenuWindow#0" />
                 <element signature="e#1354#1669#0" />
                 <element signature="e#1703#1747#0" />
                 <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
                 <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
+                <element signature="e#15086#15087#0" expanded="true" />
+                <element signature="e#15177#15178#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/event/ActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -132,8 +211,12 @@
       <find>water</find>
       <find>embos</find>
       <find>openAct</find>
-      <find>sob</find>
       <find>embossing</find>
+      <find>sob</find>
+      <find>multiplyMatrix</find>
+      <find>black</find>
+      <find>setAn</find>
+      <find>createToolbarRobert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -156,26 +239,66 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MenuWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StereoImageCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MenuWindow.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="683" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="140" />
+    <option name="y" value="27" />
     <option name="width" value="683" />
-    <option name="height" value="743" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="StereoImageBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StereoImageBuilder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StereoImageBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StereoImageBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StereoImageBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StereoImageBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StereoImageBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StereoImageBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="StereoImageBuilder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="StereoImageBuilder" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576859686132" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576861981459" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -213,195 +336,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576406408989</updated>
-    </task>
-    <task id="LOCAL-00024" summary="action на  blur">
-      <created>1576852422270</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852422270</updated>
-    </task>
-    <task id="LOCAL-00025" summary="create toolbar on blur">
-      <created>1576852475804</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852475804</updated>
-    </task>
-    <task id="LOCAL-00026" summary="fix">
-      <created>1576852509901</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852509901</updated>
-    </task>
-    <task id="LOCAL-00027" summary="create watercolor algoritm">
-      <created>1576852736103</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852736103</updated>
-    </task>
-    <task id="LOCAL-00028" summary="shell on watercolor">
-      <created>1576852761897</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852761897</updated>
-    </task>
-    <task id="LOCAL-00029" summary="create toolbar watercolor">
-      <created>1576852813377</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852813377</updated>
-    </task>
-    <task id="LOCAL-00030" summary="craete action on watercolor">
-      <created>1576852850760</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852850760</updated>
-    </task>
-    <task id="LOCAL-00031" summary="add toolbar  watercolor on panel">
-      <created>1576852904378</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1576852904378</updated>
-    </task>
-    <task id="LOCAL-00032" summary="add c2b filter">
-      <created>1576853471223</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1576853471223</updated>
-    </task>
-    <task id="LOCAL-00033" summary="add action on c2b">
-      <created>1576853501230</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1576853501230</updated>
-    </task>
-    <task id="LOCAL-00034" summary="create c2b toolbar">
-      <created>1576853547084</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1576853547084</updated>
-    </task>
-    <task id="LOCAL-00035" summary="add c2b toolbar, upgrade">
-      <created>1576853597120</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1576853597120</updated>
-    </task>
-    <task id="LOCAL-00036" summary="add negative filter-algoritm">
-      <created>1576854244613</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1576854244613</updated>
-    </task>
-    <task id="LOCAL-00037" summary="add shell on negative">
-      <created>1576854290349</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1576854290349</updated>
-    </task>
-    <task id="LOCAL-00038" summary="add action on negative filter">
-      <created>1576854351623</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1576854351623</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add toolbar on negative filter">
-      <created>1576854404256</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1576854404256</updated>
-    </task>
-    <task id="LOCAL-00040" summary="update">
-      <created>1576854447177</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1576854447177</updated>
-    </task>
-    <task id="LOCAL-00041" summary="create toolbar About">
-      <created>1576856567483</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1576856567587</updated>
-    </task>
-    <task id="LOCAL-00042" summary="add action on About">
-      <created>1576856610410</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1576856610410</updated>
-    </task>
-    <task id="LOCAL-00043" summary="create description of programm(About)">
-      <created>1576857012047</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857012047</updated>
-    </task>
-    <task id="LOCAL-00044" summary="create toolbar embossing">
-      <created>1576857226738</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857226738</updated>
-    </task>
-    <task id="LOCAL-00045" summary="create action embossing">
-      <created>1576857262688</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857262688</updated>
-    </task>
-    <task id="LOCAL-00046" summary="embossing filter">
-      <created>1576857363073</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857363073</updated>
-    </task>
-    <task id="LOCAL-00047" summary="embossing matrix">
-      <created>1576857465419</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857465419</updated>
-    </task>
-    <task id="LOCAL-00048" summary="shell embossing">
-      <created>1576857507906</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857507906</updated>
-    </task>
-    <task id="LOCAL-00049" summary="matrix Sharpness">
-      <created>1576857760525</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857760525</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Sharpness filter">
-      <created>1576857820355</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1576857820358</updated>
     </task>
     <task id="LOCAL-00051" summary="shell matrix Sharpness">
       <created>1576857842082</created>
@@ -557,7 +491,196 @@
       <option name="project" value="LOCAL" />
       <updated>1576859512111</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="add ordered matrix">
+      <created>1576859606036</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859606036</updated>
+    </task>
+    <task id="LOCAL-00074" summary="fix matrix">
+      <created>1576859631190</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859631190</updated>
+    </task>
+    <task id="LOCAL-00075" summary="setter Red Color">
+      <created>1576859683979</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859683979</updated>
+    </task>
+    <task id="LOCAL-00076" summary="setter Green color">
+      <created>1576859708765</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859708765</updated>
+    </task>
+    <task id="LOCAL-00077" summary="setter Blue color">
+      <created>1576859733811</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859733811</updated>
+    </task>
+    <task id="LOCAL-00078" summary="fix ordered filter">
+      <created>1576859767364</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859767365</updated>
+    </task>
+    <task id="LOCAL-00079" summary="ordered filter algoritm">
+      <created>1576859872200</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859872200</updated>
+    </task>
+    <task id="LOCAL-00080" summary="ordered filter shell">
+      <created>1576859919141</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859919142</updated>
+    </task>
+    <task id="LOCAL-00081" summary="ordered settings fix">
+      <created>1576859958375</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859958375</updated>
+    </task>
+    <task id="LOCAL-00082" summary="create toolbar ordered filter">
+      <created>1576860010651</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860010652</updated>
+    </task>
+    <task id="LOCAL-00083" summary="add toolbar ordered filter on the panel">
+      <created>1576860053180</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860053180</updated>
+    </task>
+    <task id="LOCAL-00084" summary="add toolbar sobel filter on the panel">
+      <created>1576860076932</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860076932</updated>
+    </task>
+    <task id="LOCAL-00085" summary="create Toolbar Robert filter">
+      <created>1576860221787</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860221787</updated>
+    </task>
+    <task id="LOCAL-00086" summary="add Toolbar Robert filter on the panel">
+      <created>1576860255642</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860255642</updated>
+    </task>
+    <task id="LOCAL-00087" summary="add action Robert filter">
+      <created>1576860321088</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860321088</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add robert settings">
+      <created>1576860372869</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860372869</updated>
+    </task>
+    <task id="LOCAL-00089" summary="robert filter algoritm">
+      <created>1576860446698</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860446698</updated>
+    </task>
+    <task id="LOCAL-00090" summary="robert filter shell">
+      <created>1576860536254</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860536254</updated>
+    </task>
+    <task id="LOCAL-00091" summary="action on exit">
+      <created>1576860922253</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1576860922253</updated>
+    </task>
+    <task id="LOCAL-00092" summary="create Toolbar Flip(mirror) filter">
+      <created>1576861039395</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861039395</updated>
+    </task>
+    <task id="LOCAL-00093" summary="action on Flip(mirror) filter">
+      <created>1576861077153</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861077153</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Flip(mirror) filter algoritm">
+      <created>1576861117364</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861117364</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Flip(mirror) filter algoritm shell">
+      <created>1576861139420</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861139420</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Flip(mirror) filter fix">
+      <created>1576861190858</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861190858</updated>
+    </task>
+    <task id="LOCAL-00097" summary="update B&amp;W filter">
+      <created>1576861295089</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861295089</updated>
+    </task>
+    <task id="LOCAL-00098" summary="new class for stereo">
+      <created>1576861340788</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861340788</updated>
+    </task>
+    <task id="LOCAL-00099" summary="create generator StereoPic">
+      <created>1576861412940</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1576861412940</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TodoView">
@@ -570,10 +693,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="25" width="683" height="743" extended-state="4" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.14128728" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3901515" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -582,12 +705,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41435564" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41435564" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32952693" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.27243066" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27243066" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32952693" />
@@ -635,43 +758,36 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="shell embossing" />
-    <MESSAGE value="matrix Sharpness" />
-    <MESSAGE value="Sharpness filter" />
-    <MESSAGE value="shell matrix Sharpness" />
-    <MESSAGE value="create Sharpness on Toolbar" />
-    <MESSAGE value="Sharpness action" />
-    <MESSAGE value="add matrix Sharpness on toolbar" />
-    <MESSAGE value="add embossing on toolbar" />
-    <MESSAGE value="fix about" />
-    <MESSAGE value="fix rotate Action" />
-    <MESSAGE value="fix toolbarRotate" />
-    <MESSAGE value="add doubleAction" />
-    <MESSAGE value="create toolbar double filter" />
-    <MESSAGE value="add shell on doubleF" />
-    <MESSAGE value="double filter algoritm" />
-    <MESSAGE value="update toolbar double" />
-    <MESSAGE value="create Toolbar Sobel filter" />
-    <MESSAGE value="create action on sobel filter" />
-    <MESSAGE value="add sobel Filter algoritm" />
-    <MESSAGE value="shell on sobel filter" />
-    <MESSAGE value="fix" />
-    <MESSAGE value="setter threshold" />
-    <MESSAGE value="settings sobel filter" />
-    <MESSAGE value="action on ordered filter" />
-    <MESSAGE value="add ordered filter settiongs" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ordered filter settiongs" />
+    <MESSAGE value="setter Red Color" />
+    <MESSAGE value="setter Green color" />
+    <MESSAGE value="setter Blue color" />
+    <MESSAGE value="fix ordered filter" />
+    <MESSAGE value="ordered filter algoritm" />
+    <MESSAGE value="ordered filter shell" />
+    <MESSAGE value="ordered settings fix" />
+    <MESSAGE value="create toolbar ordered filter" />
+    <MESSAGE value="add toolbar ordered filter on the panel" />
+    <MESSAGE value="add toolbar sobel filter on the panel" />
+    <MESSAGE value="create Toolbar Robert filter" />
+    <MESSAGE value="add Toolbar Robert filter on the panel" />
+    <MESSAGE value="add action Robert filter" />
+    <MESSAGE value="add robert settings" />
+    <MESSAGE value="robert filter algoritm" />
+    <MESSAGE value="robert filter shell" />
+    <MESSAGE value="action on exit" />
+    <MESSAGE value="create Toolbar Flip(mirror) filter" />
+    <MESSAGE value="action on Flip(mirror) filter" />
+    <MESSAGE value="Flip(mirror) filter algoritm" />
+    <MESSAGE value="Flip(mirror) filter algoritm shell" />
+    <MESSAGE value="Flip(mirror) filter fix" />
+    <MESSAGE value="update B&amp;W filter" />
+    <MESSAGE value="new class for stereo" />
+    <MESSAGE value="create generator StereoPic" />
+    <option name="LAST_COMMIT_MESSAGE" value="create generator StereoPic" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -680,37 +796,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#893#939#0" />
-            <element signature="e#974#1024#0" />
-            <element signature="method#sobelSettings#0;class#MenuWindow#0" />
-            <element signature="e#2336#2337#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
-            <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarSharpness#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarEmbossing#0;class#MenuWindow#0" />
-            <element signature="e#1354#1669#0" />
-            <element signature="e#1703#1747#0" />
-            <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
-            <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/StereoImageCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        <state relative-caret-position="121">
+          <caret line="199" column="14" selection-start-line="199" selection-start-column="9" selection-end-line="199" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1599#1600#0" expanded="true" />
+            <element signature="e#1632#1633#0" expanded="true" />
+            <element signature="e#1639#1745#0" />
+            <element signature="e#1640#2782#0" />
+            <element signature="e#1639#1736#0" />
+            <element signature="e#1638#3079#0" />
+            <element signature="e#4492#4586#0" />
+            <element signature="e#4492#5116#0" />
+            <element signature="e#2680#2681#0" expanded="true" />
+            <element signature="e#2714#2715#0" expanded="true" />
             <element signature="method#blackWhiteFilter#0;class#MainPanel#0" />
             <element signature="method#setRGB#0;class#MainPanel#0" />
             <element signature="method#checkColor#0;class#MainPanel#0" />
@@ -722,6 +841,57 @@
             <element signature="method#watercolor#0;class#MainPanel#0" />
             <element signature="method#c2b#0;class#MainPanel#0" />
             <element signature="method#negative#0;class#MainPanel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/javax/swing/ImageIcon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="216" selection-start-line="216" selection-end-line="216" />
+          <folding>
+            <element signature="e#6758#6759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="424" column="12" selection-start-line="424" selection-start-column="12" selection-end-line="424" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#818#890#0" />
+            <element signature="e#893#939#0" />
+            <element signature="e#1107#1179#0" />
+            <element signature="e#974#1024#0" />
+            <element signature="method#sobelSettings#0;class#MenuWindow#0" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="method#orderedSettings#0;class#MenuWindow#0" />
+            <element signature="method#robertSettings#0;class#MenuWindow#0" />
+            <element signature="e#7210#7211#0" expanded="true" />
+            <element signature="e#7305#7306#0" expanded="true" />
+            <element signature="method#createToolbarMirrorF#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarSharpness#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarOrdered#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarEmbossing#0;class#MenuWindow#0" />
+            <element signature="e#1354#1669#0" />
+            <element signature="e#1703#1747#0" />
+            <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
+            <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
+            <element signature="e#15086#15087#0" expanded="true" />
+            <element signature="e#15177#15178#0" expanded="true" />
           </folding>
         </state>
       </provider>
