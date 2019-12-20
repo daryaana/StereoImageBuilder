@@ -94,6 +94,84 @@ public class MenuWindow extends JFrame {
         dialog.setLocationRelativeTo(this);
         dialog.setVisible(true);
     }
+    private void orderedSettings() {
+        JDialog dialog = new JDialog(this, "Set dithering", true);
+        JPanel ditheringPanel = new JPanel();
+        TextField ditheringFieldRed = new TextField("", 10);
+        TextField ditheringFieldGreen = new TextField("", 10);
+        TextField ditheringFieldBlue = new TextField("", 10);
+        JButton save = new JButton("Save");
+        int red = 2;
+        int green = 2;
+        int blue = 2;
+
+        ditheringPanel.setLayout(new GridLayout(4, 1));
+
+        ditheringFieldRed.setText(String.valueOf(red));
+        ditheringFieldGreen.setText(String.valueOf(green));
+        ditheringFieldBlue.setText(String.valueOf(blue));
+
+        save.addActionListener(d -> dialog.dispose());
+        Object o = new Object();
+
+        ditheringFieldRed.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {}
+            @Override
+            public void focusLost(FocusEvent e) {
+                synchronized (o) {
+                    mainPanel.setRed(Integer.valueOf(ditheringFieldRed.getText()));
+                    mainPanel.orderedFilter();
+                }
+            }
+        });
+
+        ditheringFieldGreen.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {}
+            @Override
+            public void focusLost(FocusEvent e) {
+                synchronized (o) {
+              //      mainPanel.setGreen(Integer.valueOf(ditheringFieldGreen.getText()));
+              //      mainPanel.orderedFilter();
+                }
+            }
+        });
+
+        ditheringFieldBlue.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {}
+            @Override
+            public void focusLost(FocusEvent e) {
+                synchronized (o) {
+               //     mainPanel.setBlue(Integer.valueOf(ditheringFieldBlue.getText()));
+               //     mainPanel.orderedFilter();
+                }
+            }
+        });
+
+        ditheringPanel.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createTitledBorder("Dithering"), BorderFactory.createEmptyBorder(5,5,5,5)));
+        ditheringPanel.add(ditheringFieldRed);
+        ditheringPanel.add(new JLabel("Red"));
+        ditheringPanel.add(ditheringFieldRed);
+        ditheringPanel.add(ditheringFieldGreen);
+        ditheringPanel.add(new JLabel("Green"));
+        ditheringPanel.add(ditheringFieldGreen);
+        ditheringPanel.add(ditheringFieldBlue);
+        ditheringPanel.add(new JLabel("Blue"));
+        ditheringPanel.add(ditheringFieldBlue);
+        ditheringPanel.add(save);
+
+
+        dialog.add(ditheringPanel);
+
+        dialog.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        dialog.setPreferredSize(new Dimension(250, 180));
+        dialog.pack();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }
+
 
 
 
