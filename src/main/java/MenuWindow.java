@@ -12,7 +12,11 @@ public class MenuWindow extends JFrame {
     private JToolBar toolBar = new JToolBar();
     private MainPanel mainPanel = new MainPanel();
     private JFileChooser fileChooser = null;
-
+    MenuWindow() {
+        fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+        mainPanel.setRGB(redInit, greenInit, blueInit);
+    }
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);

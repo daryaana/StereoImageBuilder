@@ -1,6 +1,9 @@
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +16,10 @@ public class MainPanel extends JPanel {
     Rectangle selector;
     Rectangle bounds;
     boolean visible;
+    MainPanel() {
+
+
+    }
     public void loadFile(File file) {
         try {
             firstImage = ImageIO.read(new File(file.getPath()));
