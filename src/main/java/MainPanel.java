@@ -58,6 +58,11 @@ public class MainPanel extends JPanel {
     public void setBlue(int blueColor) {
         green = blueColor;
     }
+
+    public void orderedFilter() {
+        thirdImage = ordered(secondImage);
+        repaint();
+    }
     BufferedImage ordered(BufferedImage secondImage) {
         if (secondImage == null) {
             secondImage = firstImage;
