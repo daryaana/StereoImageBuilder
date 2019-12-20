@@ -316,6 +316,41 @@ return thirdImage;
         }
         return thirdImage;
     }
+
+    BufferedImage sobel(BufferedImage secondImage, int threshold) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+
+        final int[][] matrix_X = {{-1, 0, 1},
+                {-2, 1, 2},
+                {-1, 0, 1}};
+
+        final int[][] matrix_Y = {{-1, -2, -1},
+                {0, 0, 0},
+                {1, 2, 1}};
+
+        BufferedImage result_X = multiplyMatrix(secondImage, matrix_X, 1, 0);
+        BufferedImage result_Y = multiplyMatrix(secondImage, matrix_Y, 1, 0);
+
+        for (int i = 0; i < secondImage.getWidth(); i++) {
+            for (int j = 0; j < secondImage.getHeight(); j++) {
+                int res_X = result_X.getRGB(i, j) & 0xFF;
+                int res_Y = result_Y.getRGB(i, j) & 0xFF;
+                int res = (int) (Math.sqrt(res_X * res_X + res_Y * res_Y) + 0.5);
+                int color;
+                if (res < threshold) {
+                    color = Color.BLACK.getRGB();
+                } else {
+                    color = Color.WHITE.getRGB();
+                }
+                result_X.setRGB(i, j, color);
+            }
+        }
+        return result_X;
+
+    }
+
     public void negativeFilter() {
         thirdImage = negative(secondImage);
         repaint();
