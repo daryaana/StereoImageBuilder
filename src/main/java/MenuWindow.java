@@ -203,6 +203,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(sharpnessButton);
         sharpnessButton.addActionListener(sharpnessAction);
     }
+    public void createToolbarOrdered(JToolBar toolBar) {
+        JButton orderedButton = new JButton();
+        orderedButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/ordered.png")));
+        orderedButton.setToolTipText("Ordered");
+        toolBar.add(orderedButton);
+        orderedButton.addActionListener(orderedAction);
+    }
     public void createToolbarSobel(JToolBar toolBar) {
         JButton sobelButton = new JButton();
         sobelButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/sobel.png")));
