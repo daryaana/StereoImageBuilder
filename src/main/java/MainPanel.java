@@ -7,6 +7,7 @@ import java.awt.event.MouseMotionAdapter;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class MainPanel extends JPanel {
     BufferedImage firstImage = null;
@@ -238,6 +239,24 @@ return thirdImage;
             secondImage = firstImage;
         }
         return multiplyMatrix(secondImage, matrixBlur, 6, 0);
+    }
+
+    public BufferedImage watercolor(BufferedImage image) {
+        if (secondImage == null) {
+            image = firstImage;
+        }
+        int pixels[] = null;
+
+        BufferedImage thirdImage = new BufferedImage(image.getWidth(), image.getHeight(), image.getType());
+
+        for (int i = 2; i < image.getWidth() - 2; i++) {
+            for (int j = 2; j < image.getHeight() - 2; j++) {
+                pixels = image.getRGB(i - 2, j - 2, 5, 5, pixels, 0, 5);
+                Arrays.sort(pixels, 0, pixels.length);
+                thirdImage.setRGB(i, j, pixels[13]);
+            }
+        }
+        return thirdImage;
     }
 
     @Override
