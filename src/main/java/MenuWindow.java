@@ -1,5 +1,7 @@
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.io.*;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
@@ -33,7 +35,13 @@ public class MenuWindow extends JFrame {
             mainPanel.loadFile(file);
         }
     };
-
+    public void createToolbarRotate(JToolBar toolBar) {
+        JButton rotateButton = new JButton();
+        rotateButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/rotate.png")));
+        rotateButton.setToolTipText("Rotate");
+        toolBar.add(rotateButton);
+    //    rotateButton.addActionListener(rotateAction);
+    }
 
         public void createMenu () {
             setSize(1090, 600);
@@ -46,6 +54,7 @@ public class MenuWindow extends JFrame {
             JMenu filterMenu = new JMenu("Filters");
             JMenu helpMenu = new JMenu("Help");
 
+            createToolbarRotate(toolBar);
             createToolbarBlackWhiteF(toolBar);
             toolBar.setFloatable(false);
 
