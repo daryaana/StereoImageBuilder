@@ -289,7 +289,10 @@ return thirdImage;
         return multiplyMatrix(secondImage, matrixSharpness, 1, 0);
 
     }
-
+    public void doubleFilter() {
+        thirdImage = doubleF(secondImage);
+        repaint();
+    }
     public void negativeFilter() {
         thirdImage = negative(secondImage);
         repaint();
