@@ -66,10 +66,46 @@ public class MainPanel extends JPanel {
                 }
                 newPixel = new Color((int) newPixel, (int) newPixel, (int) newPixel).getRGB();
                 thirdImage.setRGB(i, j, (int) newPixel);
-                return thirdImage;
             }
         }
 
+return thirdImage;
     }
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setColor(Color.BLACK);
 
+        if (firstImage != null) {
+            if (firstImage.getWidth() > 350 || firstImage.getHeight() > 350) {
+                g.drawImage(firstImage, 10, 10, 350, 350, null);
+            } else {
+                g.drawImage(firstImage, 10, 10, null);
+            }
+        }
+
+        if (secondImage != null) {
+            if (secondImage.getWidth() > 350 || secondImage.getHeight() > 350) {
+                g.drawImage(secondImage, 370, 10, 350, 350, null);
+            } else {
+                g.drawImage(secondImage, 370, 10, null);
+            }
+        }
+
+        if (thirdImage != null) {
+            if (thirdImage.getWidth() > 350 || thirdImage.getHeight() > 350) {
+                g.drawImage(thirdImage, 730, 10, 350, 350, null);
+            } else {
+                g.drawImage(thirdImage, 730, 10, null);
+            }
+        }
+        g.setXORMode(Color.WHITE);
+        Graphics2D g2d = (Graphics2D) g.create();
+        Stroke dashed = new BasicStroke(1, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{3}, 0);
+        g2d.setStroke(dashed);
+        if (true) {
+            g2d.draw(selector);
+        }
+
+    }
 }
