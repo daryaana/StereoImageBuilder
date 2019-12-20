@@ -132,7 +132,7 @@ public class MenuWindow extends JFrame {
             @Override
             public void focusLost(FocusEvent e) {
                 synchronized (o) {
-              //      mainPanel.setGreen(Integer.valueOf(ditheringFieldGreen.getText()));
+                    mainPanel.setGreen(Integer.valueOf(ditheringFieldGreen.getText()));
               //      mainPanel.orderedFilter();
                 }
             }
@@ -144,7 +144,7 @@ public class MenuWindow extends JFrame {
             @Override
             public void focusLost(FocusEvent e) {
                 synchronized (o) {
-               //     mainPanel.setBlue(Integer.valueOf(ditheringFieldBlue.getText()));
+                    mainPanel.setBlue(Integer.valueOf(ditheringFieldBlue.getText()));
                //     mainPanel.orderedFilter();
                 }
             }
