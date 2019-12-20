@@ -12,6 +12,7 @@ public class MenuWindow extends JFrame {
     private JToolBar toolBar = new JToolBar();
     private MainPanel mainPanel = new MainPanel();
     private JFileChooser fileChooser = null;
+    private int redInit = 2, greenInit = 2, blueInit = 2;
     MenuWindow() {
         fileChooser = new JFileChooser();
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
