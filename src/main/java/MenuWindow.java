@@ -36,6 +36,10 @@ public class MenuWindow extends JFrame {
     ActionListener sharpnessAction = e -> {
         mainPanel.sharpnessFilter();
     };
+    ActionListener sobelAction = e -> {
+        mainPanel.sobelFilter();
+        sobelSettings();
+    };
 
 
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
