@@ -28,6 +28,11 @@ public class MainPanel extends JPanel {
             {0, 1, 0},
             {-1, 0, 1},
             {0, -1, 0}};
+    private final int[][] matrixSharpness = {
+            {0, -1, 0},
+            {-1, 5, -1},
+            {0, -1, 0}};
+
 
     MainPanel() {
 
@@ -273,6 +278,14 @@ return thirdImage;
         repaint();
     }
 
+    public BufferedImage sharpness(BufferedImage secondImage) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+        return multiplyMatrix(secondImage, matrixSharpness, 1, 0);
+
+    }
+
     public void negativeFilter() {
         thirdImage = negative(secondImage);
         repaint();
@@ -281,7 +294,6 @@ return thirdImage;
         thirdImage = embossingFilter(secondImage);
         repaint();
     }
-
 
     BufferedImage embossingFilter(BufferedImage secondImage) {
         if (secondImage == null) {

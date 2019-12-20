@@ -33,6 +33,7 @@ public class MenuWindow extends JFrame {
     ActionListener negativeAction = e -> mainPanel.negativeFilter();
     ActionListener embossingAction = e -> mainPanel.embossing();
 
+
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();
         blackWhiteButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blackwhite.png")));
