@@ -91,7 +91,7 @@ public class MenuWindow extends JFrame {
         rotateButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/rotate.png")));
         rotateButton.setToolTipText("Rotate");
         toolBar.add(rotateButton);
-    //    rotateButton.addActionListener(rotateAction);
+       rotateButton.addActionListener(rotateAction);
     }
     public void createToolbarAbout(JToolBar toolBar) {
         JButton aboutButton = new JButton();
