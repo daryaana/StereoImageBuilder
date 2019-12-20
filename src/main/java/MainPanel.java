@@ -141,6 +141,21 @@ public class MainPanel extends JPanel {
         return thirdImage;
 
     }
+    public BufferedImage mirror(BufferedImage image) {
+        if (secondImage == null) {
+            image = firstImage;
+        }
+        thirdImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_INT_RGB/*image.getType()*/);
+        for (int i = 0; i < image.getWidth(); i++) {
+            for (int j = 0; j < image.getHeight() / 2; j++) {
+                int tmp = image.getRGB(i, j);
+                thirdImage.setRGB(i, j, image.getRGB(i, image.getHeight() - j - 1));
+                thirdImage.setRGB(i, image.getHeight() - j - 1, tmp);
+            }
+        }
+        return thirdImage;
+    }
+
 
     void setThreshold(int threshold) {
         this.threshold = threshold;
