@@ -145,6 +145,7 @@ public class MenuWindow extends JFrame {
             createToolbarBlackWhiteF(toolBar);
             createToolbarBlur(toolBar);
             createToolbarWaterColor(toolBar);
+            createToolbarCopyC2B(toolBar);
             toolBar.setFloatable(false);
 
             menuBar.add(fileMenu);
