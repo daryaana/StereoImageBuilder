@@ -49,6 +49,9 @@ public class MainPanel extends JPanel {
 
 
     }
+    public void setRed(int redColor) {
+        red = redColor;
+    }
     void setThreshold(int threshold) {
         this.threshold = threshold;
     }
