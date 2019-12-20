@@ -12,6 +12,7 @@ public class MainPanel extends JPanel {
     private double scale;
     Rectangle selector;
     Rectangle bounds;
+    boolean visible;
     public void loadFile(File file) {
         try {
             firstImage = ImageIO.read(new File(file.getPath()));
@@ -119,7 +120,7 @@ return thirdImage;
         Graphics2D g2d = (Graphics2D) g.create();
         Stroke dashed = new BasicStroke(1, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{3}, 0);
         g2d.setStroke(dashed);
-        if (true) {
+        if (visible) {
             g2d.draw(selector);
         }
 
