@@ -201,6 +201,26 @@ return thirdImage;
 
         return newPixel;
     }
+
+    private BufferedImage multiplyMatrix(BufferedImage image, int[][] matrix, int div, int constant) {
+        if (secondImage == null) {
+            image = firstImage;
+        }
+        BufferedImage thirdImage = new BufferedImage(image.getWidth(), image.getHeight(), image.getType());
+
+        for (int i = 0; i < image.getWidth(); i++) {
+            for (int j = 0; j < image.getHeight(); j++) {
+                int[] newPixel = newColor(image, i, j, matrix);
+                int red = checkColor(newPixel[0] / div + constant);
+                int green = checkColor(newPixel[1] / div + constant);
+                int blue = checkColor(newPixel[2] / div + constant);
+                thirdImage.setRGB(i, j, new Color(red, green, blue).getRGB());
+            }
+        }
+
+
+        return thirdImage;
+    }
     @Override
     public void paint(Graphics g) {
         super.paint(g);
