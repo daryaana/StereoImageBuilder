@@ -16,6 +16,7 @@ public class MainPanel extends JPanel {
     Rectangle selector;
     Rectangle bounds;
     boolean visible;
+    private int angle;//=0;
     MainPanel() {
 
 
@@ -52,6 +53,10 @@ public class MainPanel extends JPanel {
         repaint();
     }
 
+    public void rotateFilter() {
+        thirdImage = rotate(secondImage, angle);
+        repaint();
+    }
     BufferedImage rotate(BufferedImage secondImage, int angle) {
         if (secondImage == null) {
             secondImage = firstImage;
