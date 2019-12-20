@@ -59,6 +59,10 @@ public class MainPanel extends JPanel {
         green = blueColor;
     }
 
+    public void robertFilter() {
+        thirdImage = robert(secondImage, threshold);
+        repaint();
+    }
 
     BufferedImage robert(BufferedImage secondImage, int threshold) {
         if (secondImage == null) {
