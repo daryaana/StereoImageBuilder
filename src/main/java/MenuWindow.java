@@ -71,6 +71,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(rotateButton);
     //    rotateButton.addActionListener(rotateAction);
     }
+    public void createToolbarAbout(JToolBar toolBar) {
+        JButton aboutButton = new JButton();
+        aboutButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/about.png")));
+        aboutButton.setToolTipText("About author");
+        toolBar.add(aboutButton);
+        aboutButton.addActionListener(aboutAuthorAction);
+    }
     public void createToolbarBlur(JToolBar toolBar) {
         JButton blurButton = new JButton();
         blurButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blur.png")));
