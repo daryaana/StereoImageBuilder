@@ -292,8 +292,15 @@ public class MainPanel extends JPanel {
                 thirdImage.setRGB(i, j, (int) newPixel);
             }
         }
-
-return thirdImage;
+        BufferedImage pattern = null;
+        try {
+            pattern = ImageIO.read(new File("src/main/resources/images/pattern (3).jpg"));
+        } catch (IOException e) {
+        }
+        StereoImageCreator stereoImageCreator = new StereoImageCreator();
+        System.out.println(thirdImage.getWidth() + " " + thirdImage.getHeight());
+        BufferedImage imgg = stereoImageCreator.generateStereoPicture(firstImage, pattern);
+        return imgg;
     }
 
     public void setRGB(int redInit, int greenInit, int blueInit) {
