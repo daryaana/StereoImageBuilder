@@ -20,12 +20,14 @@ public class MenuWindow extends JFrame {
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
         mainPanel.setRGB(redInit, greenInit, blueInit);
     }
+
+    ActionListener blackWhiteAction = e -> mainPanel.blackWhiteFilter();
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();
         blackWhiteButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blackwhite.png")));
         blackWhiteButton.setToolTipText("Black & White");
         toolBar.add(blackWhiteButton);
-      //  blackWhiteButton.addActionListener(blackWhiteAction);
+        blackWhiteButton.addActionListener(blackWhiteAction);
     }
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
