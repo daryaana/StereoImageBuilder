@@ -18,6 +18,10 @@ public class MainPanel extends JPanel {
     boolean visible;
     private int angle;//=0;
     int red, green, blue;
+    private final int[][] matrixBlur = {
+            {0, 1, 0},
+            {1, 2, 1},
+            {0, 1, 0}};
     MainPanel() {
 
 
@@ -233,7 +237,7 @@ return thirdImage;
         if (secondImage == null) {
             secondImage = firstImage;
         }
-        return multiplyMatrix(secondImage, /*matrixBlur*/, 6, 0);
+        return multiplyMatrix(secondImage, matrixBlur, 6, 0);
     }
 
     @Override
