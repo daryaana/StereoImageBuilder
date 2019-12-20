@@ -17,7 +17,7 @@ public class MenuWindow extends JFrame {
         int f = fileChooser.showOpenDialog(null);
         if (f == JFileChooser.APPROVE_OPTION) {
                File file = fileChooser.getSelectedFile();
-            //   mainPanel.loadFile(file);
+               mainPanel.loadFile(file);
         }
     }
 

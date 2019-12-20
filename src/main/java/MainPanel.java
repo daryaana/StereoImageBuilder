@@ -9,6 +9,19 @@ public class MainPanel extends JPanel {
     BufferedImage firstImage = null;
     BufferedImage secondImage = null;
     BufferedImage thirdImage = null;
+    public void loadFile(File file) {
+        try {
+            firstImage = ImageIO.read(new File(file.getPath()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        int imageHeight = firstImage.getHeight();
+        int imageWidth = firstImage.getWidth();
+
+        secondImage = null;
+        thirdImage = null;
+        repaint();
+    }
     public void blackWhiteFilter() {
         thirdImage = blackWhite(secondImage);
         repaint();
