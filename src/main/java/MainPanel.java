@@ -23,6 +23,12 @@ public class MainPanel extends JPanel {
             {0, 1, 0},
             {1, 2, 1},
             {0, 1, 0}};
+
+    private final int[][] matrixEmbossing = {
+            {0, 1, 0},
+            {-1, 0, 1},
+            {0, -1, 0}};
+
     MainPanel() {
 
 
