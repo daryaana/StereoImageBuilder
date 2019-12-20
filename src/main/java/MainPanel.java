@@ -293,6 +293,29 @@ return thirdImage;
         thirdImage = doubleF(secondImage);
         repaint();
     }
+    private BufferedImage doubleF(BufferedImage secondImage) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+        BufferedImage thirdImage = new BufferedImage(secondImage.getWidth(), secondImage.getHeight(), secondImage.getType());
+
+        for (int i = 0; i < secondImage.getWidth(); i += 2) {
+            for (int j = 0; j < secondImage.getHeight(); j += 2) {
+                int newPixel = secondImage.getRGB(secondImage.getWidth() / 4 + i / 2, secondImage.getHeight() / 4 + j / 2);
+                thirdImage.setRGB(i, j, newPixel);
+                if (i + 1 < secondImage.getWidth()) {
+                    thirdImage.setRGB(i + 1, j, newPixel);
+                }
+                if (j + 1 < secondImage.getHeight()) {
+                    thirdImage.setRGB(i, j + 1, newPixel);
+                }
+                if (i + 1 < secondImage.getWidth() && j + 1 < secondImage.getHeight()) {
+                    thirdImage.setRGB(i + 1, j + 1, newPixel);
+                }
+            }
+        }
+        return thirdImage;
+    }
     public void negativeFilter() {
         thirdImage = negative(secondImage);
         repaint();
