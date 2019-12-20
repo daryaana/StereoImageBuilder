@@ -12,6 +12,7 @@ public class MenuWindow extends JFrame {
     private JToolBar toolBar = new JToolBar();
     private MainPanel mainPanel = new MainPanel();
     private JFileChooser fileChooser = null;
+
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);
@@ -58,7 +59,7 @@ public class MenuWindow extends JFrame {
         fileMenu.add(openMenuItem);
         fileMenu.add(exitMenuItem);
 
-
+        openMenuItem.addActionListener(openAction);
 
 
 
