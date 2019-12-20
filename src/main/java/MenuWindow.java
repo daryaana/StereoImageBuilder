@@ -435,6 +435,7 @@ public class MenuWindow extends JFrame {
             createToolbarSobel(toolBar);
             createToolbarRobert(toolBar);
             createToolbarAbout(toolBar);
+            createToolbarMirrorF(toolBar);
             toolBar.setFloatable(false);
 
             menuBar.add(fileMenu);
