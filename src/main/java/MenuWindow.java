@@ -55,6 +55,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(negativeFButton);
         negativeFButton.addActionListener(negativeAction);
     }
+    public void createToolbarSharpness(JToolBar toolBar) {
+        JButton sharpnessButton = new JButton();
+        sharpnessButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/sharpness.png")));
+        sharpnessButton.setToolTipText("Sharpness");
+        toolBar.add(sharpnessButton);
+        sharpnessButton.addActionListener(sharpnessAction);
+    }
 
     public void createToolbarEmbossing(JToolBar toolBar) {
         JButton embossingButton = new JButton();
