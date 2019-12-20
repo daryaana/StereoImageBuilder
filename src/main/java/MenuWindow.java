@@ -120,7 +120,7 @@ public class MenuWindow extends JFrame {
             @Override
             public void focusLost(FocusEvent e) {
                 synchronized (o) {
-              //      mainPanel.setRed(Integer.valueOf(ditheringFieldRed.getText()));
+              /     mainPanel.setRed(Integer.valueOf(ditheringFieldRed.getText()));
               //      mainPanel.orderedFilter();
                 }
             }

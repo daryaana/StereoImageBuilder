@@ -58,7 +58,43 @@ public class MainPanel extends JPanel {
     public void setBlue(int blueColor) {
         green = blueColor;
     }
+    BufferedImage ordered(BufferedImage secondImage) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
 
+
+        final int N = 8;
+        final int length = 64;
+
+        BufferedImage thirdImage = new BufferedImage(secondImage.getWidth(), secondImage.getHeight(), secondImage.getType());
+
+        for (int i = 0; i < secondImage.getWidth(); i++) {
+            for (int j = 0; j < secondImage.getHeight(); j++) {
+                int red = new Color(secondImage.getRGB(i, j)).getRed();
+                int blue = new Color(secondImage.getRGB(i, j)).getBlue();
+                int green = new Color(secondImage.getRGB(i, j)).getGreen();
+                if (red * length / 256 > orderedMatrix[i % N][j % N]) {
+                    red = 255 * (red / 256 +1 );
+                } else {
+                    red = 255 * (red / 256);
+                }
+                if (blue * length / 256 > orderedMatrix[i % N][j % N]) {
+                    blue = 255 * (blue / 256 +1);
+                } else {
+                    blue = 255 * (blue / 256);
+                }
+                if (green * length / 256 > orderedMatrix[i % N][j % N]) {
+                    green = 255 * (green / 256+ 1);
+                } else {
+                    green = 255 * (green / 256);
+                }
+                thirdImage.setRGB(i, j, new Color(red, green, blue).getRGB());
+            }
+        }
+        return thirdImage;
+
+    }
 
     void setThreshold(int threshold) {
         this.threshold = threshold;
