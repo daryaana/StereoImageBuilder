@@ -141,6 +141,10 @@ public class MainPanel extends JPanel {
         return thirdImage;
 
     }
+    public void mirrorFilter(){
+        thirdImage = mirror(secondImage);
+        repaint();
+    }
     public BufferedImage mirror(BufferedImage image) {
         if (secondImage == null) {
             image = firstImage;
