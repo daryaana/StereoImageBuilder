@@ -124,6 +124,7 @@ public class MenuWindow extends JFrame {
 
             createToolbarRotate(toolBar);
             createToolbarBlackWhiteF(toolBar);
+            createToolbarBlur(toolBar);
             toolBar.setFloatable(false);
 
             menuBar.add(fileMenu);
