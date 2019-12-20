@@ -208,6 +208,7 @@ public class MenuWindow extends JFrame {
             createToolbarSharpness(toolBar);
             createToolbarEmbossing(toolBar);
             createToolbarAbout(toolBar);
+            createToolbarDouble(toolBar);
             toolBar.setFloatable(false);
 
             menuBar.add(fileMenu);
