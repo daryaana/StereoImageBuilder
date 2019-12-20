@@ -17,57 +17,57 @@ public class MenuWindow extends JFrame {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);
         if (f == JFileChooser.APPROVE_OPTION) {
-               File file = fileChooser.getSelectedFile();
-               mainPanel.loadFile(file);
+            File file = fileChooser.getSelectedFile();
+            mainPanel.loadFile(file);
         }
-    }
+    };
 
 
-    public void createMenu(){
+        public void createMenu () {
 
-        setSize(1090, 600);
-        setLocationRelativeTo(null);
-        setName("Filter - Smirnova Darya FIT 16208");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLayout(new BorderLayout());
+            setSize(1090, 600);
+            setLocationRelativeTo(null);
+            setName("Filter - Smirnova Darya FIT 16208");
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            setLayout(new BorderLayout());
 
-        JMenuBar menuBar = new JMenuBar();
-        JMenu fileMenu = new JMenu("File");
-        JMenu filterMenu = new JMenu("Filters");
-        JMenu helpMenu = new JMenu("Help");
+            JMenuBar menuBar = new JMenuBar();
+            JMenu fileMenu = new JMenu("File");
+            JMenu filterMenu = new JMenu("Filters");
+            JMenu helpMenu = new JMenu("Help");
 
-       toolBar.setFloatable(false);
+            toolBar.setFloatable(false);
 
-        menuBar.add(fileMenu);
-        menuBar.add(filterMenu);
-        menuBar.add(helpMenu);
-        setJMenuBar(menuBar);
-
-
-        add(toolBar, BorderLayout.PAGE_START);
+            menuBar.add(fileMenu);
+            menuBar.add(filterMenu);
+            menuBar.add(helpMenu);
+            setJMenuBar(menuBar);
 
 
-        getContentPane().add(mainPanel);
+            add(toolBar, BorderLayout.PAGE_START);
+
+
+            getContentPane().add(mainPanel);
 
 
 /**
  * подпункты в меню*/
-        JMenuItem openMenuItem = new JMenuItem("Open");
-        JMenuItem exitMenuItem = new JMenuItem("Exit");
+            JMenuItem openMenuItem = new JMenuItem("Open");
+            JMenuItem exitMenuItem = new JMenuItem("Exit");
 
-        fileMenu.addSeparator();//зделитель при нью и опен
-        fileMenu.add(openMenuItem);
-        fileMenu.add(exitMenuItem);
+            fileMenu.addSeparator();//зделитель при нью и опен
+            fileMenu.add(openMenuItem);
+            fileMenu.add(exitMenuItem);
 
-        openMenuItem.addActionListener(openAction);
-
-
-
-        setLocationRelativeTo(null);
-        setVisible(true);
-        setResizable(false);
+            openMenuItem.addActionListener(openAction);
 
 
-    }
+            setLocationRelativeTo(null);
+            setVisible(true);
+            setResizable(false);
+
+
+        }
+
 }
 
