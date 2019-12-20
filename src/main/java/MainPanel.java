@@ -267,6 +267,27 @@ return thirdImage;
         repaint();
     }
 
+    public BufferedImage negative(BufferedImage secondImage) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+
+        BufferedImage thirdImage = new BufferedImage(secondImage.getWidth(), secondImage.getHeight(), secondImage.getType());
+
+        for (int i = 0; i < secondImage.getWidth(); i++) {
+            for (int j = 0; j < secondImage.getHeight(); j++) {
+                int newPixel = secondImage.getRGB(i, j);
+                int red = 255 - (newPixel >> 16) & 255;
+                int blue = 255 - newPixel & 255;
+                int green = 255 - (newPixel >> 8) & 255;
+                newPixel = ((red << 16) | (green << 8) | blue);
+                thirdImage.setRGB(i, j, newPixel);
+            }
+        }
+        return thirdImage;
+
+    }
+
     @Override
     public void paint(Graphics g) {
         super.paint(g);
