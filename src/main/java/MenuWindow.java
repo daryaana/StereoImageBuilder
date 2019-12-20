@@ -18,6 +18,13 @@ public class MenuWindow extends JFrame {
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
         mainPanel.setRGB(redInit, greenInit, blueInit);
     }
+    public void createToolbarBlackWhiteF(JToolBar toolBar) {
+        JButton blackWhiteButton = new JButton();
+        blackWhiteButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blackwhite.png")));
+        blackWhiteButton.setToolTipText("Black & White");
+        toolBar.add(blackWhiteButton);
+      //  blackWhiteButton.addActionListener(blackWhiteAction);
+    }
     ActionListener openAction = e -> {
         fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
         int f = fileChooser.showOpenDialog(null);
@@ -29,10 +36,8 @@ public class MenuWindow extends JFrame {
 
 
         public void createMenu () {
-
             setSize(1090, 600);
             setLocationRelativeTo(null);
-            setName("Filter - Smirnova Darya FIT 16208");
             setDefaultCloseOperation(EXIT_ON_CLOSE);
             setLayout(new BorderLayout());
 
@@ -41,6 +46,7 @@ public class MenuWindow extends JFrame {
             JMenu filterMenu = new JMenu("Filters");
             JMenu helpMenu = new JMenu("Help");
 
+            createToolbarBlackWhiteF(toolBar);
             toolBar.setFloatable(false);
 
             menuBar.add(fileMenu);
