@@ -34,6 +34,7 @@ public class MenuWindow extends JFrame {
         mainPanel.robertFilter();
         robertSettings();
     };
+    ActionListener mirrorAction = e -> mainPanel.mirrorFilter();
     ActionListener aboutAuthorAction = e -> aboutAuthor();
     ActionListener waterAction = e -> {
         mainPanel.watercolorFilter();
