@@ -20,7 +20,10 @@ public class MenuWindow extends JFrame {
         fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
         mainPanel.setRGB(redInit, greenInit, blueInit);
     }
-
+    ActionListener orderedAction=e->{
+        orderedSettings();
+        mainPanel.orderedFilter();
+    };
     ActionListener blackWhiteAction = e -> mainPanel.blackWhiteFilter();
     ActionListener rotateAction = e -> {
         mainPanel.rotateFilter();
