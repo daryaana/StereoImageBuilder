@@ -70,6 +70,14 @@ public class MenuWindow extends JFrame {
         toolBar.add(blurButton);
         blurButton.addActionListener(blurAction);
     }
+    public void createToolbarCopyC2B(JToolBar toolBar) {
+        JButton copyButton = new JButton();
+        copyButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/copy.png")));
+        copyButton.setToolTipText("Copy C2B");
+        toolBar.add(copyButton);
+        copyButton.addActionListener(copyCtoB);
+    }
+
 
     private void rotateSettings() {
         JDialog dialog = new JDialog(this, "Set angle", true);
