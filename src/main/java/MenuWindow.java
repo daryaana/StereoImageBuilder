@@ -52,6 +52,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(rotateButton);
     //    rotateButton.addActionListener(rotateAction);
     }
+    public void createToolbarBlur(JToolBar toolBar) {
+        JButton blurButton = new JButton();
+        blurButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blur.png")));
+        blurButton.setToolTipText("Blur");
+        toolBar.add(blurButton);
+        blurButton.addActionListener(blurAction);
+    }
 
     private void rotateSettings() {
         JDialog dialog = new JDialog(this, "Set angle", true);
