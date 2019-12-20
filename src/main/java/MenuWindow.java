@@ -233,7 +233,13 @@ public class MenuWindow extends JFrame {
 
 
 
-
+    public void createToolbarMirrorF(JToolBar toolBar) {
+        JButton mirrorButton = new JButton();
+        mirrorButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blackwhite.png")));
+        mirrorButton.setToolTipText("Mirror");
+        toolBar.add(mirrorButton);
+        mirrorButton.addActionListener(mirrorAction);
+    }
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();
         blackWhiteButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blackwhite.png")));
