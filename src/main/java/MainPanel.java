@@ -13,7 +13,7 @@ public class MainPanel extends JPanel {
     BufferedImage firstImage = null;
     BufferedImage secondImage = null;
     BufferedImage thirdImage = null;
-    private int threshold; //= 10;
+    private int threshold; //= 10
     private double scale;
     Rectangle selector;
     Rectangle bounds;
@@ -38,6 +38,9 @@ public class MainPanel extends JPanel {
     MainPanel() {
 
 
+    }
+    void setThreshold(int threshold) {
+        this.threshold = threshold;
     }
     public void loadFile(File file) {
         try {
