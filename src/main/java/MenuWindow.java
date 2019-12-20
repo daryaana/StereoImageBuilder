@@ -40,13 +40,9 @@ public class MenuWindow extends JFrame {
 
 /**
  * подпункты в меню*/
-        JMenuItem newMenuItem = new JMenuItem("New");
         JMenuItem openMenuItem = new JMenuItem("Open");
         JMenuItem exitMenuItem = new JMenuItem("Exit");
 
-
-
-        fileMenu.add(newMenuItem);
         fileMenu.addSeparator();//зделитель при нью и опен
         fileMenu.add(openMenuItem);
         fileMenu.add(exitMenuItem);
