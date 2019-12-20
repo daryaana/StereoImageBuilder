@@ -9,6 +9,9 @@ public class MainPanel extends JPanel {
     BufferedImage firstImage = null;
     BufferedImage secondImage = null;
     BufferedImage thirdImage = null;
+    private double scale;
+    Rectangle selector;
+    Rectangle bounds;
     public void loadFile(File file) {
         try {
             firstImage = ImageIO.read(new File(file.getPath()));
@@ -17,6 +20,24 @@ public class MainPanel extends JPanel {
         }
         int imageHeight = firstImage.getHeight();
         int imageWidth = firstImage.getWidth();
+        double scaleWidth = imageWidth / (double) imageWidth;
+        double scaleHeight = imageHeight / (double) imageHeight;
+        scale = scaleHeight < scaleWidth ? scaleHeight : scaleWidth;
+
+        if (scale >= 1.0) {
+            scale = 1.0;
+        }
+
+        if (scale == 1.0) {
+            selector = new Rectangle(0, 0, imageWidth, imageHeight);
+        } else {
+            selector = new Rectangle(0, 0, (int) (350 * scale), (int) (350 * scale));
+        }
+
+        int height = (int) (imageHeight * scale);
+        int width = (int) (imageWidth * scale);
+
+        bounds = new Rectangle(10, 10, width, height);
 
         secondImage = null;
         thirdImage = null;
