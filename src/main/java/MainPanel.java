@@ -170,8 +170,15 @@ return thirdImage;
 
         return color;
     }
+    private int countIndex(int param, int index_1, int index_2, int size) {
+        int result;
 
+        if (index_1 == 0) result = index_1 + index_2 % size;
+        else if (index_1 == param - 1) result = (index_1 - 2) + index_2 % size;
+        else result = (index_1 - 1) + index_2 % size;
 
+        return result;
+    }
     @Override
     public void paint(Graphics g) {
         super.paint(g);
