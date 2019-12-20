@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="">
+    <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="matrix Sharpness">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MenuWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MenuWindow.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +37,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="219" />
-          <entry key="txt" value="879" />
+          <entry key="java" value="277" />
+          <entry key="txt" value="1335" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="219" />
-          <entry key="PLAIN_TEXT" value="879" />
+          <entry key="JAVA" value="277" />
+          <entry key="PLAIN_TEXT" value="1335" />
         </counts>
       </usages-collector>
     </session>
@@ -63,16 +65,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="272" column="5" lean-forward="true" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
+            <state relative-caret-position="79">
+              <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1705#1706#0" expanded="true" />
-                <element signature="e#1739#1740#0" expanded="true" />
                 <element signature="method#blackWhiteFilter#0;class#MainPanel#0" />
+                <element signature="method#setRGB#0;class#MainPanel#0" />
+                <element signature="method#checkColor#0;class#MainPanel#0" />
+                <element signature="method#countIndex#0;class#MainPanel#0" />
+                <element signature="method#newColor#0;class#MainPanel#0" />
                 <element signature="method#blurFilter#0;class#MainPanel#0" />
                 <element signature="method#blur#0;class#MainPanel#0" />
                 <element signature="method#watercolorFilter#0;class#MainPanel#0" />
@@ -84,17 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+            <state relative-caret-position="124">
+              <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#893#939#0" />
                 <element signature="e#974#1024#0" />
+                <element signature="method#sobelSettings#0;class#MenuWindow#0" />
+                <element signature="e#2336#2337#0" expanded="true" />
+                <element signature="e#2431#2432#0" expanded="true" />
                 <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
+                <element signature="method#createToolbarSharpness#0;class#MenuWindow#0" />
+                <element signature="method#createToolbarEmbossing#0;class#MenuWindow#0" />
                 <element signature="e#1354#1669#0" />
                 <element signature="e#1703#1747#0" />
                 <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
@@ -120,6 +130,10 @@
       <find>setrgb</find>
       <find>check</find>
       <find>water</find>
+      <find>embos</find>
+      <find>openAct</find>
+      <find>sob</find>
+      <find>embossing</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,8 +156,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/main/java/MenuWindow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MainPanel.java" />
       </list>
     </option>
   </component>
@@ -161,7 +175,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576828541343" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576859686132" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -199,167 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576406408989</updated>
-    </task>
-    <task id="LOCAL-00001" summary="change java version to 8">
-      <created>1576816009149</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1576816009149</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update">
-      <created>1576816087365</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1576816087365</updated>
-    </task>
-    <task id="LOCAL-00003" summary="paint override">
-      <created>1576816476729</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1576816476729</updated>
-    </task>
-    <task id="LOCAL-00004" summary="drawDashedLine">
-      <created>1576816584252</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1576816584252</updated>
-    </task>
-    <task id="LOCAL-00005" summary="drawDashedLine use in &quot;paint&quot;">
-      <created>1576816698114</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1576816698114</updated>
-    </task>
-    <task id="LOCAL-00006" summary="remove fixation">
-      <created>1576816810828</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1576816810828</updated>
-    </task>
-    <task id="LOCAL-00007" summary="MenuWindow constructor">
-      <created>1576817302334</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1576817302334</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update">
-      <created>1576817354523</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1576817354523</updated>
-    </task>
-    <task id="LOCAL-00009" summary="toolbar B&amp;W">
-      <created>1576818268036</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818268036</updated>
-    </task>
-    <task id="LOCAL-00010" summary="toolbar rotate">
-      <created>1576818414275</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818414275</updated>
-    </task>
-    <task id="LOCAL-00011" summary="add action on B&amp;W filter">
-      <created>1576818494686</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818494686</updated>
-    </task>
-    <task id="LOCAL-00012" summary="rotate filter">
-      <created>1576818602091</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818602091</updated>
-    </task>
-    <task id="LOCAL-00013" summary="shell on rotate">
-      <created>1576818655809</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818655809</updated>
-    </task>
-    <task id="LOCAL-00014" summary="action on rotate">
-      <created>1576818917725</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818917725</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add rotateSettings">
-      <created>1576818991508</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1576818991508</updated>
-    </task>
-    <task id="LOCAL-00016" summary="add setRGB in MainPanel">
-      <created>1576850826934</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1576850826935</updated>
-    </task>
-    <task id="LOCAL-00017" summary="add checkOut for blur">
-      <created>1576851525840</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851525840</updated>
-    </task>
-    <task id="LOCAL-00018" summary="countIndex for smth filters">
-      <created>1576851666740</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851666740</updated>
-    </task>
-    <task id="LOCAL-00019" summary="newColor for creating new color for smth filters">
-      <created>1576851737696</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851737696</updated>
-    </task>
-    <task id="LOCAL-00020" summary="multiplyMatrix for blur">
-      <created>1576851797036</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851797036</updated>
-    </task>
-    <task id="LOCAL-00021" summary="add blur">
-      <created>1576851857996</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851857996</updated>
-    </task>
-    <task id="LOCAL-00022" summary="add shell on blur filter">
-      <created>1576851893144</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851893144</updated>
-    </task>
-    <task id="LOCAL-00023" summary="create matrix for blur">
-      <created>1576851957201</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1576851957201</updated>
     </task>
     <task id="LOCAL-00024" summary="action на  blur">
       <created>1576852422270</created>
@@ -508,7 +361,203 @@
       <option name="project" value="LOCAL" />
       <updated>1576857226738</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="create action embossing">
+      <created>1576857262688</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857262688</updated>
+    </task>
+    <task id="LOCAL-00046" summary="embossing filter">
+      <created>1576857363073</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857363073</updated>
+    </task>
+    <task id="LOCAL-00047" summary="embossing matrix">
+      <created>1576857465419</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857465419</updated>
+    </task>
+    <task id="LOCAL-00048" summary="shell embossing">
+      <created>1576857507906</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857507906</updated>
+    </task>
+    <task id="LOCAL-00049" summary="matrix Sharpness">
+      <created>1576857760525</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857760525</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Sharpness filter">
+      <created>1576857820355</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857820358</updated>
+    </task>
+    <task id="LOCAL-00051" summary="shell matrix Sharpness">
+      <created>1576857842082</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857842082</updated>
+    </task>
+    <task id="LOCAL-00052" summary="create Sharpness on Toolbar">
+      <created>1576857904460</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857904460</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Sharpness action">
+      <created>1576857947852</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857947852</updated>
+    </task>
+    <task id="LOCAL-00054" summary="add matrix Sharpness on toolbar">
+      <created>1576858051217</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858051218</updated>
+    </task>
+    <task id="LOCAL-00055" summary="add embossing on toolbar">
+      <created>1576858080207</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858080207</updated>
+    </task>
+    <task id="LOCAL-00056" summary="fix about">
+      <created>1576858112937</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858112937</updated>
+    </task>
+    <task id="LOCAL-00057" summary="fix rotate Action">
+      <created>1576858383491</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858383491</updated>
+    </task>
+    <task id="LOCAL-00058" summary="fix toolbarRotate">
+      <created>1576858434817</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858434818</updated>
+    </task>
+    <task id="LOCAL-00059" summary="add doubleAction">
+      <created>1576858584652</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858584652</updated>
+    </task>
+    <task id="LOCAL-00060" summary="create toolbar double filter">
+      <created>1576858634717</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858634719</updated>
+    </task>
+    <task id="LOCAL-00061" summary="add shell on doubleF">
+      <created>1576858698673</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858698673</updated>
+    </task>
+    <task id="LOCAL-00062" summary="double filter algoritm">
+      <created>1576858730361</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858730362</updated>
+    </task>
+    <task id="LOCAL-00063" summary="update toolbar double">
+      <created>1576858783733</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858783733</updated>
+    </task>
+    <task id="LOCAL-00064" summary="create Toolbar Sobel filter">
+      <created>1576858847776</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858847776</updated>
+    </task>
+    <task id="LOCAL-00065" summary="create action on sobel filter">
+      <created>1576858888591</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858888591</updated>
+    </task>
+    <task id="LOCAL-00066" summary="add sobel Filter algoritm">
+      <created>1576858945717</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858945717</updated>
+    </task>
+    <task id="LOCAL-00067" summary="shell on sobel filter">
+      <created>1576858984530</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1576858984530</updated>
+    </task>
+    <task id="LOCAL-00068" summary="fix">
+      <created>1576859035072</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859035073</updated>
+    </task>
+    <task id="LOCAL-00069" summary="setter threshold">
+      <created>1576859092340</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859092340</updated>
+    </task>
+    <task id="LOCAL-00070" summary="settings sobel filter">
+      <created>1576859164608</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859164608</updated>
+    </task>
+    <task id="LOCAL-00071" summary="action on ordered filter">
+      <created>1576859434228</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859434229</updated>
+    </task>
+    <task id="LOCAL-00072" summary="add ordered filter settiongs">
+      <created>1576859512111</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1576859512111</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TodoView">
@@ -586,32 +635,32 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="multiplyMatrix for blur" />
-    <MESSAGE value="add blur" />
-    <MESSAGE value="add shell on blur filter" />
-    <MESSAGE value="create matrix for blur" />
-    <MESSAGE value="action на  blur" />
-    <MESSAGE value="create toolbar on blur" />
+    <MESSAGE value="shell embossing" />
+    <MESSAGE value="matrix Sharpness" />
+    <MESSAGE value="Sharpness filter" />
+    <MESSAGE value="shell matrix Sharpness" />
+    <MESSAGE value="create Sharpness on Toolbar" />
+    <MESSAGE value="Sharpness action" />
+    <MESSAGE value="add matrix Sharpness on toolbar" />
+    <MESSAGE value="add embossing on toolbar" />
+    <MESSAGE value="fix about" />
+    <MESSAGE value="fix rotate Action" />
+    <MESSAGE value="fix toolbarRotate" />
+    <MESSAGE value="add doubleAction" />
+    <MESSAGE value="create toolbar double filter" />
+    <MESSAGE value="add shell on doubleF" />
+    <MESSAGE value="double filter algoritm" />
+    <MESSAGE value="update toolbar double" />
+    <MESSAGE value="create Toolbar Sobel filter" />
+    <MESSAGE value="create action on sobel filter" />
+    <MESSAGE value="add sobel Filter algoritm" />
+    <MESSAGE value="shell on sobel filter" />
     <MESSAGE value="fix" />
-    <MESSAGE value="create watercolor algoritm" />
-    <MESSAGE value="shell on watercolor" />
-    <MESSAGE value="create toolbar watercolor" />
-    <MESSAGE value="craete action on watercolor" />
-    <MESSAGE value="add toolbar  watercolor on panel" />
-    <MESSAGE value="add c2b filter" />
-    <MESSAGE value="add action on c2b" />
-    <MESSAGE value="create c2b toolbar" />
-    <MESSAGE value="add c2b toolbar, upgrade" />
-    <MESSAGE value="add negative filter-algoritm" />
-    <MESSAGE value="add shell on negative" />
-    <MESSAGE value="add action on negative filter" />
-    <MESSAGE value="add toolbar on negative filter" />
-    <MESSAGE value="update" />
-    <MESSAGE value="create toolbar About" />
-    <MESSAGE value="add action on About" />
-    <MESSAGE value="create description of programm(About)" />
-    <MESSAGE value="create toolbar embossing" />
-    <option name="LAST_COMMIT_MESSAGE" value="create toolbar embossing" />
+    <MESSAGE value="setter threshold" />
+    <MESSAGE value="settings sobel filter" />
+    <MESSAGE value="action on ordered filter" />
+    <MESSAGE value="add ordered filter settiongs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ordered filter settiongs" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -631,40 +680,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="272" column="5" lean-forward="true" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
+        <state relative-caret-position="124">
+          <caret line="123" column="16" selection-start-line="123" selection-start-column="16" selection-end-line="123" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1705#1706#0" expanded="true" />
-            <element signature="e#1739#1740#0" expanded="true" />
+            <element signature="e#893#939#0" />
+            <element signature="e#974#1024#0" />
+            <element signature="method#sobelSettings#0;class#MenuWindow#0" />
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarSharpness#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarEmbossing#0;class#MenuWindow#0" />
+            <element signature="e#1354#1669#0" />
+            <element signature="e#1703#1747#0" />
+            <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
+            <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#blackWhiteFilter#0;class#MainPanel#0" />
+            <element signature="method#setRGB#0;class#MainPanel#0" />
+            <element signature="method#checkColor#0;class#MainPanel#0" />
+            <element signature="method#countIndex#0;class#MainPanel#0" />
+            <element signature="method#newColor#0;class#MainPanel#0" />
             <element signature="method#blurFilter#0;class#MainPanel#0" />
             <element signature="method#blur#0;class#MainPanel#0" />
             <element signature="method#watercolorFilter#0;class#MainPanel#0" />
             <element signature="method#watercolor#0;class#MainPanel#0" />
             <element signature="method#c2b#0;class#MainPanel#0" />
             <element signature="method#negative#0;class#MainPanel#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#974#1024#0" />
-            <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
-            <element signature="e#1354#1669#0" />
-            <element signature="e#1703#1747#0" />
-            <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
-            <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
           </folding>
         </state>
       </provider>

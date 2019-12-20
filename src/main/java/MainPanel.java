@@ -52,6 +52,10 @@ public class MainPanel extends JPanel {
     public void setRed(int redColor) {
         red = redColor;
     }
+    public void setGreen(int greenColor) {
+        green = greenColor;
+    }
+
     void setThreshold(int threshold) {
         this.threshold = threshold;
     }
