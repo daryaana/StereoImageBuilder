@@ -272,6 +272,13 @@ return thirdImage;
         repaint();
     }
 
+    BufferedImage embossingFilter(BufferedImage secondImage) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+        return multiplyMatrix(secondImage, matrixEmbossing, 1, 128);
+    }
+
     public BufferedImage negative(BufferedImage secondImage) {
         if (secondImage == null) {
             secondImage = firstImage;
