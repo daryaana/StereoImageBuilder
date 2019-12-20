@@ -49,6 +49,57 @@ public class MenuWindow extends JFrame {
     //    rotateButton.addActionListener(rotateAction);
     }
 
+    private void rotateSettings() {
+        JDialog dialog = new JDialog(this, "Set angle", true);
+        JPanel anglePanel = new JPanel();
+        JSlider angleSlider = new JSlider(JSlider.HORIZONTAL);
+        TextField angleField = new TextField("", 10);
+        JButton save = new JButton("Save");
+        int angle = 0;
+
+        dialog.setLayout(new BorderLayout());
+        anglePanel.setLayout(new GridLayout(2, 2));
+
+        angleSlider.setMaximum(180);
+        angleSlider.setMinimum(-180);
+
+        save.addActionListener(d -> dialog.dispose());
+
+        angleField.setText(String.valueOf(angle));
+        angleSlider.setValue(angle);
+
+        angleField.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                angleSlider.setValue(Integer.valueOf(angleField.getText()));
+            }
+        });
+
+        angleSlider.addChangeListener(s -> {
+            int a = angleSlider.getValue();
+            angleField.setText(String.valueOf(a));
+            mainPanel.setAngle(a);
+            mainPanel.rotateFilter();
+        });
+
+        anglePanel.setBorder(BorderFactory.createCompoundBorder(BorderFactory.createTitledBorder("Angle"), BorderFactory.createEmptyBorder(5, 5, 5, 5)));
+
+        anglePanel.add(angleField);
+        anglePanel.add(angleSlider);
+        anglePanel.add(save);
+
+        dialog.add(anglePanel);
+
+        dialog.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        dialog.setPreferredSize(new Dimension(300, 130));
+        dialog.pack();
+        dialog.setLocationRelativeTo(this);
+        dialog.setVisible(true);
+    }
         public void createMenu () {
             setSize(1090, 600);
             setLocationRelativeTo(null);

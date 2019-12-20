@@ -57,6 +57,9 @@ public class MainPanel extends JPanel {
         thirdImage = rotate(secondImage, angle);
         repaint();
     }
+    void setAngle(int angle) {
+        this.angle = angle;
+    }
     BufferedImage rotate(BufferedImage secondImage, int angle) {
         if (secondImage == null) {
             secondImage = firstImage;
