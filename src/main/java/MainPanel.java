@@ -51,6 +51,71 @@ public class MainPanel extends JPanel {
         thirdImage = null;
         repaint();
     }
+
+    BufferedImage rotate(BufferedImage secondImage, int angle) {
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+
+        int width = secondImage.getWidth();
+        int height = secondImage.getHeight();
+
+        double oldWidthRadius = (double) (width - 1) / 2;
+        double oldHeightRadius = (double) (height - 1) / 2;
+
+        double angleCos = Math.cos(angle * Math.PI / 180);
+        double angleSin = Math.sin(angle * Math.PI / 180);
+
+        double halfWidth = (double) secondImage.getWidth() / 2;
+        double halfHeight = (double) secondImage.getHeight() / 2;
+
+        double x1 = halfWidth * angleCos;
+        double y1 = halfWidth * angleSin;
+
+        double x2 = halfWidth * angleCos - halfHeight * angleSin;
+        double y2 = halfWidth * angleSin + halfHeight * angleCos;
+
+        double x3 = -halfHeight * angleSin;
+        double y3 = halfHeight * angleCos;
+
+        double x4 = 0;
+        double y4 = 0;
+
+        halfWidth = Math.max(Math.max(x1, x2), Math.max(x3, x4)) - Math.min(Math.min(x1, x2), Math.min(x3, x4));
+        halfHeight = Math.max(Math.max(y1, y2), Math.max(y3, y4)) - Math.min(Math.min(y1, y2), Math.min(y3, y4));
+
+        int newWidth = (int) (halfWidth * 2);
+        int newHeight = (int) (halfHeight * 2);
+
+        BufferedImage thirdImage = new BufferedImage(newWidth, newHeight, secondImage.getType());
+
+        double newWidthRadius = (double) (newWidth - 1) / 2;
+        double newHeightRadius = (double) (newHeight - 1) / 2;
+
+        double negHR = -newHeightRadius;
+
+        for (int i = 0; i < newHeight; i++) {
+            double negWR = -newWidthRadius;
+            for (int j = 0; j < newWidth; j++) {
+                int oi = (int) (angleCos * negHR + angleSin * negWR + oldHeightRadius);
+                int oj = (int) (-angleSin * negHR + angleCos * negWR + oldWidthRadius);
+
+                if ((oi < 0) || (oj < 0) || (oi >= height) || (oj >= width)) {
+                    thirdImage.setRGB(i, j, new Color(255, 255, 255).getRGB());
+                } else {
+                    int red = new Color(secondImage.getRGB(oi, oj)).getRed();
+                    int blue = new Color(secondImage.getRGB(oi, oj)).getBlue();
+                    int green = new Color(secondImage.getRGB(oi, oj)).getGreen();
+                    thirdImage.setRGB(i, j, new Color(red, green, blue).getRGB());
+                }
+                negWR++;
+            }
+            negHR++;
+        }
+        return thirdImage;
+
+    }
+
     public void blackWhiteFilter() {
         thirdImage = blackWhite(secondImage);
         repaint();

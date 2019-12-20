@@ -22,6 +22,7 @@ public class MenuWindow extends JFrame {
     }
 
     ActionListener blackWhiteAction = e -> mainPanel.blackWhiteFilter();
+
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();
         blackWhiteButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/blackwhite.png")));
