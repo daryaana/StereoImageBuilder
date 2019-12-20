@@ -279,7 +279,7 @@ return thirdImage;
     }
 
     void sharpnessFilter() {
-
+        thirdImage = sharpness(secondImage);
         repaint();
     }
     public BufferedImage sharpness(BufferedImage secondImage) {
