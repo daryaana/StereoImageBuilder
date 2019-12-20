@@ -221,6 +221,14 @@ return thirdImage;
 
         return thirdImage;
     }
+    public BufferedImage blur(BufferedImage secondImage) {
+
+        if (secondImage == null) {
+            secondImage = firstImage;
+        }
+        return multiplyMatrix(secondImage, /*matrixBlur*/, 6, 0);
+    }
+
     @Override
     public void paint(Graphics g) {
         super.paint(g);
