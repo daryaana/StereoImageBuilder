@@ -221,6 +221,13 @@ return thirdImage;
 
         return thirdImage;
     }
+
+    public void blurFilter() {
+        thirdImage = blur(secondImage);
+        repaint();
+
+    }
+
     public BufferedImage blur(BufferedImage secondImage) {
 
         if (secondImage == null) {
