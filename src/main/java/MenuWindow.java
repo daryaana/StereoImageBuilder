@@ -41,6 +41,10 @@ public class MenuWindow extends JFrame {
             mainPanel.loadFile(file);
         }
     };
+    ActionListener blurAction = e -> {
+        mainPanel.blurFilter();
+    };
+
     public void createToolbarRotate(JToolBar toolBar) {
         JButton rotateButton = new JButton();
         rotateButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/rotate.png")));
