@@ -31,6 +31,7 @@ public class MenuWindow extends JFrame {
     };
     ActionListener copyCtoB = e -> mainPanel.c2b();
     ActionListener negativeAction = e -> mainPanel.negativeFilter();
+    ActionListener embossingAction = e -> mainPanel.embossing();
 
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();

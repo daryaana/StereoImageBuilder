@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4bcdfb3d-489d-4fb4-8c92-66b52586849a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MainPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainPanel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,24 +25,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="180" />
-          <entry key="txt" value="642" />
+          <entry key="java" value="219" />
+          <entry key="txt" value="879" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="180" />
-          <entry key="PLAIN_TEXT" value="642" />
+          <entry key="JAVA" value="219" />
+          <entry key="PLAIN_TEXT" value="879" />
         </counts>
       </usages-collector>
     </session>
@@ -64,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="267" column="5" selection-start-line="267" selection-start-column="5" selection-end-line="267" selection-end-column="5" />
+            <state relative-caret-position="96">
+              <caret line="272" column="5" lean-forward="true" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1705#1706#0" expanded="true" />
@@ -78,22 +77,29 @@
                 <element signature="method#blur#0;class#MainPanel#0" />
                 <element signature="method#watercolorFilter#0;class#MainPanel#0" />
                 <element signature="method#watercolor#0;class#MainPanel#0" />
+                <element signature="method#c2b#0;class#MainPanel#0" />
+                <element signature="method#negative#0;class#MainPanel#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="141" column="34" lean-forward="true" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
+            <state relative-caret-position="260">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#974#1024#0" />
                 <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
                 <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
+                <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
                 <element signature="e#1354#1669#0" />
                 <element signature="e#1703#1747#0" />
+                <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
+                <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
+                <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
               </folding>
             </state>
           </provider>
@@ -112,6 +118,8 @@
     <findStrings>
       <find>open</find>
       <find>setrgb</find>
+      <find>check</find>
+      <find>water</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -134,8 +142,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/MenuWindow.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MenuWindow.java" />
       </list>
     </option>
   </component>
@@ -409,7 +417,98 @@
       <option name="project" value="LOCAL" />
       <updated>1576852904378</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="add c2b filter">
+      <created>1576853471223</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1576853471223</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add action on c2b">
+      <created>1576853501230</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1576853501230</updated>
+    </task>
+    <task id="LOCAL-00034" summary="create c2b toolbar">
+      <created>1576853547084</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1576853547084</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add c2b toolbar, upgrade">
+      <created>1576853597120</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1576853597120</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add negative filter-algoritm">
+      <created>1576854244613</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1576854244613</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add shell on negative">
+      <created>1576854290349</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1576854290349</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add action on negative filter">
+      <created>1576854351623</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1576854351623</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add toolbar on negative filter">
+      <created>1576854404256</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1576854404256</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update">
+      <created>1576854447177</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1576854447177</updated>
+    </task>
+    <task id="LOCAL-00041" summary="create toolbar About">
+      <created>1576856567483</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1576856567587</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add action on About">
+      <created>1576856610410</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1576856610410</updated>
+    </task>
+    <task id="LOCAL-00043" summary="create description of programm(About)">
+      <created>1576857012047</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857012047</updated>
+    </task>
+    <task id="LOCAL-00044" summary="create toolbar embossing">
+      <created>1576857226738</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1576857226738</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -487,19 +586,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="MenuWindow constructor" />
-    <MESSAGE value="update" />
-    <MESSAGE value="toolbar B&amp;W" />
-    <MESSAGE value="toolbar rotate" />
-    <MESSAGE value="add action on B&amp;W filter" />
-    <MESSAGE value="rotate filter" />
-    <MESSAGE value="shell on rotate" />
-    <MESSAGE value="action on rotate" />
-    <MESSAGE value="add rotateSettings" />
-    <MESSAGE value="add setRGB in MainPanel" />
-    <MESSAGE value="add checkOut for blur" />
-    <MESSAGE value="countIndex for smth filters" />
-    <MESSAGE value="newColor for creating new color for smth filters" />
     <MESSAGE value="multiplyMatrix for blur" />
     <MESSAGE value="add blur" />
     <MESSAGE value="add shell on blur filter" />
@@ -512,7 +598,20 @@
     <MESSAGE value="create toolbar watercolor" />
     <MESSAGE value="craete action on watercolor" />
     <MESSAGE value="add toolbar  watercolor on panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="add toolbar  watercolor on panel" />
+    <MESSAGE value="add c2b filter" />
+    <MESSAGE value="add action on c2b" />
+    <MESSAGE value="create c2b toolbar" />
+    <MESSAGE value="add c2b toolbar, upgrade" />
+    <MESSAGE value="add negative filter-algoritm" />
+    <MESSAGE value="add shell on negative" />
+    <MESSAGE value="add action on negative filter" />
+    <MESSAGE value="add toolbar on negative filter" />
+    <MESSAGE value="update" />
+    <MESSAGE value="create toolbar About" />
+    <MESSAGE value="add action on About" />
+    <MESSAGE value="create description of programm(About)" />
+    <MESSAGE value="create toolbar embossing" />
+    <option name="LAST_COMMIT_MESSAGE" value="create toolbar embossing" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -525,24 +624,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Override.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="141" column="34" lean-forward="true" selection-start-line="141" selection-start-column="34" selection-end-line="141" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
-            <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
-            <element signature="e#1354#1669#0" />
-            <element signature="e#1703#1747#0" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="267" column="5" selection-start-line="267" selection-start-column="5" selection-end-line="267" selection-end-column="5" />
+        <state relative-caret-position="96">
+          <caret line="272" column="5" lean-forward="true" selection-start-line="272" selection-start-column="5" selection-end-line="272" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1705#1706#0" expanded="true" />
@@ -552,6 +644,27 @@
             <element signature="method#blur#0;class#MainPanel#0" />
             <element signature="method#watercolorFilter#0;class#MainPanel#0" />
             <element signature="method#watercolor#0;class#MainPanel#0" />
+            <element signature="method#c2b#0;class#MainPanel#0" />
+            <element signature="method#negative#0;class#MainPanel#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MenuWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#974#1024#0" />
+            <element signature="method#createToolbarBlackWhiteF#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarWaterColor#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarNegative#0;class#MenuWindow#0" />
+            <element signature="e#1354#1669#0" />
+            <element signature="e#1703#1747#0" />
+            <element signature="method#createToolbarBlur#0;class#MenuWindow#0" />
+            <element signature="method#createToolbarCopyC2B#0;class#MenuWindow#0" />
+            <element signature="method#aboutAuthor#0;class#MenuWindow#0" />
           </folding>
         </state>
       </provider>
