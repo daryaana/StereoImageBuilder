@@ -108,4 +108,10 @@ return thirdImage;
         }
 
     }
+    private void drawDashedLine(Graphics g, int x1, int y1, int x2, int y2) {
+        Graphics2D graphics2D = (Graphics2D) g.create();
+        Stroke dashed = new BasicStroke(2, BasicStroke.CAP_BUTT, BasicStroke.JOIN_BEVEL, 0, new float[]{3}, 0);
+        graphics2D.setStroke(dashed);
+        graphics2D.drawLine(x1, y1, x2, y2);
+    }
 }
