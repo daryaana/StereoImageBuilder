@@ -24,6 +24,7 @@ public class MenuWindow extends JFrame {
     ActionListener blackWhiteAction = e -> mainPanel.blackWhiteFilter();
     ActionListener rotateAction = e -> {
         mainPanel.rotateFilter();
+        rotateSettings();
     };
     ActionListener aboutAuthorAction = e -> aboutAuthor();
     ActionListener waterAction = e -> {
