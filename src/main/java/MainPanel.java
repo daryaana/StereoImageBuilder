@@ -317,6 +317,11 @@ return thirdImage;
         return thirdImage;
     }
 
+    public void sobelFilter() {
+        thirdImage = sobel(secondImage, threshold);
+        repaint();
+
+    }
     BufferedImage sobel(BufferedImage secondImage, int threshold) {
         if (secondImage == null) {
             secondImage = firstImage;
