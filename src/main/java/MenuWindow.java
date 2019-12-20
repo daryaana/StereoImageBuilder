@@ -85,6 +85,7 @@ public class MenuWindow extends JFrame {
     ActionListener blurAction = e -> {
         mainPanel.blurFilter();
     };
+    ActionListener doubleAction = e -> mainPanel.doubleFilter();
 
     public void createToolbarRotate(JToolBar toolBar) {
         JButton rotateButton = new JButton();
