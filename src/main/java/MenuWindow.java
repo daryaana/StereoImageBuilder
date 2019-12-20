@@ -28,6 +28,7 @@ public class MenuWindow extends JFrame {
     ActionListener waterAction = e -> {
         mainPanel.watercolorFilter();
     };
+    ActionListener copyCtoB = e -> mainPanel.c2b();
 
     public void createToolbarBlackWhiteF(JToolBar toolBar) {
         JButton blackWhiteButton = new JButton();
