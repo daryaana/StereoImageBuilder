@@ -272,6 +272,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(copyButton);
         copyButton.addActionListener(copyCtoB);
     }
+    public void createToolbarRobert(JToolBar toolBar) {
+        JButton robertButton = new JButton();
+        robertButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/robert.png")));
+        robertButton.setToolTipText("Robert");
+        toolBar.add(robertButton);
+        robertButton.addActionListener(robertAction);
+    }
     public void aboutAuthor() {
         JFrame windowInfoAuthor = new JFrame("About an author");
         windowInfoAuthor.setSize(new Dimension(450, 350));
