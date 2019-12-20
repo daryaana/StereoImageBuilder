@@ -267,6 +267,11 @@ return thirdImage;
         repaint();
     }
 
+    public void negativeFilter() {
+        thirdImage = negative(secondImage);
+        repaint();
+    }
+
     public BufferedImage negative(BufferedImage secondImage) {
         if (secondImage == null) {
             secondImage = firstImage;
