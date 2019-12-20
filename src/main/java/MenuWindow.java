@@ -1,17 +1,28 @@
 import java.awt.*;
+import java.awt.event.ActionListener;
 import java.io.*;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class MenuWindow extends JFrame {
     private JToolBar toolBar = new JToolBar();
     private MainPanel mainPanel = new MainPanel();
+    private JFileChooser fileChooser = null;
+    ActionListener openAction = e -> {
+        fileChooser.setFileFilter(new FileNameExtensionFilter("Image formats", "png", "bmp", "jpg"));
+        int f = fileChooser.showOpenDialog(null);
+        if (f == JFileChooser.APPROVE_OPTION) {
+               File file = fileChooser.getSelectedFile();
+            //   mainPanel.loadFile(file);
+        }
+    }
 
 
-    public void createMenu() {
+    public void createMenu(){
 
         setSize(1090, 600);
         setLocationRelativeTo(null);
