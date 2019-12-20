@@ -93,7 +93,20 @@ public class MenuWindow extends JFrame {
         toolBar.add(copyButton);
         copyButton.addActionListener(copyCtoB);
     }
+    public void aboutAuthor() {
+        JFrame windowInfoAuthor = new JFrame("About an author");
+        windowInfoAuthor.setSize(new Dimension(450, 350));
+        windowInfoAuthor.setLocationRelativeTo(null);
+        windowInfoAuthor.setVisible(true);
+        windowInfoAuthor.setResizable(false);
 
+        JLabel describe = new JLabel("<html> Hello, it's filter for you <br>We are studying at the  FIT NSU,<br> group 16208. <br></html>");
+        windowInfoAuthor.add(describe, BorderLayout.EAST);
+        JButton close = new JButton("OK");
+        windowInfoAuthor.add(close, BorderLayout.SOUTH);
+        close.addActionListener(e -> windowInfoAuthor.dispose());
+
+    }
 
     private void rotateSettings() {
         JDialog dialog = new JDialog(this, "Set angle", true);
