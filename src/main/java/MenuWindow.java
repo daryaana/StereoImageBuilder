@@ -94,6 +94,13 @@ public class MenuWindow extends JFrame {
         toolBar.add(rotateButton);
        rotateButton.addActionListener(rotateAction);
     }
+    public void createToolbarDouble(JToolBar toolBar) {
+        JButton doubleButton = new JButton();
+        doubleButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/double.png")));
+        doubleButton.setToolTipText("Double");
+        toolBar.add(doubleButton);
+        doubleButton.addActionListener(doubleAction);
+    }
     public void createToolbarAbout(JToolBar toolBar) {
         JButton aboutButton = new JButton();
         aboutButton.setIcon(new ImageIcon(MenuWindow.class.getResource("images/about.png")));
