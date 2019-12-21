@@ -8,5 +8,6 @@ public class MainPanelTest {
     public void checkColor() {
         assertEquals(255, panel.checkColor(555));
         assertEquals(0, panel.checkColor(-555));
+        assertEquals(125, panel.checkColor(125));
     }
 }
