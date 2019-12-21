@@ -305,7 +305,7 @@ public class MainPanel extends JPanel {
         green = greenInit;
         blue = blueInit;
     }
-    private int checkColor(int color) {
+    public int checkColor(int color) {
         if (color < 0) {
             color = 0;
         }
